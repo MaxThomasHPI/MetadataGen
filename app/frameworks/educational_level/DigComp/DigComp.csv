@@ -1,0 +1,9 @@
+Level;Description;Name
+1;"user at a basic level, needs guidance";Foundation
+2;"user at a basic level, partially autonomous but sometimes needs appropriate guidance";Foundation
+3;,"autonomous user, can solve straightforward problems";Intermediate
+4;"independent user, can solve well-defined problems to his or her own needs";Intermediate
+5;"user can guide others";Advanced
+6;"user can solve more complex problems and explain to others";Advanced
+7;"user at a highly specialized level";Highly specialized
+8;"user at the most advanced and highly specialized level";Highly specialized

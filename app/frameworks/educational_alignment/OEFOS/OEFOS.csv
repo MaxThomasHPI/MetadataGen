@@ -1,0 +1,1475 @@
+Level;ShortCode;Name;Description;Uri;BroaderConcept
+1;1;NATURAL SCIENCES;;;
+2;101;Mathematics;;;NATURAL SCIENCES
+3;1010;Mathematics;;;Mathematics
+4;101001;Algebra;;;Mathematics
+4;101002;Analysis;;;Mathematics
+4;101003;Applied geometry;;;Mathematics
+4;101004;Biomathematics;;;Mathematics
+4;101005;Computer algebra;;;Mathematics
+4;101006;Differential geometry;;;Mathematics
+4;101007;Financial mathematics;;;Mathematics
+4;101008;Complex analysis;;;Mathematics
+4;101009;Geometry;;;Mathematics
+4;101010;History of mathematics;;;Mathematics
+4;101011;Graph theory;;;Mathematics
+4;101012;Combinatorics;;;Mathematics
+4;101013;Mathematical logic;;;Mathematics
+4;101014;Numerical mathematics;;;Mathematics
+4;101015;Operations research;;;Mathematics
+4;101016;Optimisation;;;Mathematics
+4;101017;Game theory;;;Mathematics
+4;101018;Statistics;;;Mathematics
+4;101019;Stochastics;;;Mathematics
+4;101020;Technical mathematics;;;Mathematics
+4;101021;Theoretical cybernetics;;;Mathematics
+4;101022;Topology;;;Mathematics
+4;101023;Actuarial mathematics;;;Mathematics
+4;101024;Probability theory;;;Mathematics
+4;101025;Number theory;;;Mathematics
+4;101026;Time series analysis;;;Mathematics
+4;101027;Dynamical systems;;;Mathematics
+4;101028;Mathematical modelling;;;Mathematics
+4;101029;Mathematical statistics;;;Mathematics
+4;101030;Reliability theory;;;Mathematics
+4;101031;Approximation theory;;;Mathematics
+4;101032;Functional analysis;;;Mathematics
+2;102;Computer Sciences;;;NATURAL SCIENCES
+3;1020;Computer Sciences;;;Computer Sciences
+4;102001;Artificial intelligence;;;Computer Sciences
+4;102002;Augmented reality;;;Computer Sciences
+4;102003;Image processing;;;Computer Sciences
+4;102004;Bioinformatics;;;Computer Sciences
+4;102005;Computer aided design (CAD);;;Computer Sciences
+4;102006;Computer supported cooperative work (CSCW);;;Computer Sciences
+4;102007;Computer animation;;;Computer Sciences
+4;102008;Computer graphics;;;Computer Sciences
+4;102009;Computer simulation;;;Computer Sciences
+4;102010;Database systems;;;Computer Sciences
+4;102011;Formal languages;;;Computer Sciences
+4;102012;History of computer science;;;Computer Sciences
+4;102013;Human-computer interaction;;;Computer Sciences
+4;102014;Information design;;;Computer Sciences
+4;102015;Information systems;;;Computer Sciences
+4;102016;IT security;;;Computer Sciences
+4;102017;Cryptology;;;Computer Sciences
+4;102018;Artificial neural networks;;;Computer Sciences
+4;102019;Machine learning;;;Computer Sciences
+4;102020;Medical informatics;;;Computer Sciences
+4;102021;Pervasive computing;;;Computer Sciences
+4;102022;Software development;;;Computer Sciences
+4;102023;Supercomputing;;;Computer Sciences
+4;102024;Usability research;;;Computer Sciences
+4;102025;Distributed systems;;;Computer Sciences
+4;102026;Virtual reality;;;Computer Sciences
+4;102027;Web engineering;;;Computer Sciences
+4;102028;Knowledge engineering;;;Computer Sciences
+4;102029;Practical computer science;;;Computer Sciences
+4;102030;Semantic technologies;;;Computer Sciences
+4;102031;Theoretical computer science;;;Computer Sciences
+4;102032;Computational intelligence;;;Computer Sciences
+4;102033;Data mining;;;Computer Sciences
+4;102034;Cyber-physical systems;;;Computer Sciences
+4;102035;Data science;;;Computer Sciences
+4;102036;Digital accessibility;;;Computer Sciences
+4;102037;Visualisation;;;Computer Sciences
+2;103;"Physics; Astronomy";;;NATURAL SCIENCES
+3;1030;"Physics; Astronomy";;;"Physics; Astronomy"
+4;103001;Aerodynamics;;;"Physics; Astronomy"
+4;103002;Acoustics;;;"Physics; Astronomy"
+4;103003;Astronomy;;;"Physics; Astronomy"
+4;103004;Astrophysics;;;"Physics; Astronomy"
+4;103005;Atomic physics;;;"Physics; Astronomy"
+4;103006;Chemical physics;;;"Physics; Astronomy"
+4;103007;Dosimetry;;;"Physics; Astronomy"
+4;103008;Experimental physics;;;"Physics; Astronomy"
+4;103009;Solid state physics;;;"Physics; Astronomy"
+4;103010;History of physics;;;"Physics; Astronomy"
+4;103011;Semiconductor physics;;;"Physics; Astronomy"
+4;103012;High energy physics;;;"Physics; Astronomy"
+4;103013;Ion physics;;;"Physics; Astronomy"
+4;103014;Nuclear physics;;;"Physics; Astronomy"
+4;103015;Condensed matter;;;"Physics; Astronomy"
+4;103016;Laser physics;;;"Physics; Astronomy"
+4;103017;Magnetism;;;"Physics; Astronomy"
+4;103018;Materials physics;;;"Physics; Astronomy"
+4;103019;Mathematical physics;;;"Physics; Astronomy"
+4;103020;Surface physics;;;"Physics; Astronomy"
+4;103021;Optics;;;"Physics; Astronomy"
+4;103022;Plasma physics;;;"Physics; Astronomy"
+4;103023;Polymer physics;;;"Physics; Astronomy"
+4;103024;Quantum field theory;;;"Physics; Astronomy"
+4;103025;Quantum mechanics;;;"Physics; Astronomy"
+4;103026;Quantum optics;;;"Physics; Astronomy"
+4;103027;Reactor physics;;;"Physics; Astronomy"
+4;103028;Theory of relativity;;;"Physics; Astronomy"
+4;103029;Statistical physics;;;"Physics; Astronomy"
+4;103030;Radiation physics;;;"Physics; Astronomy"
+4;103031;Radiation protection;;;"Physics; Astronomy"
+4;103032;Fluid mechanics;;;"Physics; Astronomy"
+4;103033;Superconductivity;;;"Physics; Astronomy"
+4;103034;Particle physics;;;"Physics; Astronomy"
+4;103035;Theoretical mechanics;;;"Physics; Astronomy"
+4;103036;Theoretical physics;;;"Physics; Astronomy"
+4;103037;Environmental physics;;;"Physics; Astronomy"
+4;103038;Space exploration;;;"Physics; Astronomy"
+4;103039;Aerosol physics;;;"Physics; Astronomy"
+4;103040;Photonics;;;"Physics; Astronomy"
+4;103041;Astroparticle physics;;;"Physics; Astronomy"
+4;103042;Electron microscopy;;;"Physics; Astronomy"
+4;103043;Computational physics;;;"Physics; Astronomy"
+4;103044;Cosmology;;;"Physics; Astronomy"
+2;104;Chemistry;;;NATURAL SCIENCES
+3;1040;Chemistry;;;Chemistry
+4;104001;General chemistry;;;Chemistry
+4;104002;Analytical chemistry;;;Chemistry
+4;104003;Inorganic chemistry;;;Chemistry
+4;104004;Chemical biology;;;Chemistry
+4;104005;Electrochemistry;;;Chemistry
+4;104006;Solid state chemistry;;;Chemistry
+4;104007;History of chemistry;;;Chemistry
+4;104008;Catalysis;;;Chemistry
+4;104009;Food chemistry;;;Chemistry
+4;104010;Macromolecular chemistry;;;Chemistry
+4;104011;Materials chemistry;;;Chemistry
+4;104012;Microanalysis;;;Chemistry
+4;104013;Natural product chemistry;;;Chemistry
+4;104014;Surface chemistry;;;Chemistry
+4;104015;Organic chemistry;;;Chemistry
+4;104016;Photochemistry;;;Chemistry
+4;104017;Physical chemistry;;;Chemistry
+4;104018;Polymer chemistry;;;Chemistry
+4;104019;Polymer sciences;;;Chemistry
+4;104020;Radiochemistry;;;Chemistry
+4;104021;Structural chemistry;;;Chemistry
+4;104022;Theoretical chemistry;;;Chemistry
+4;104023;Environmental chemistry;;;Chemistry
+4;104024;X-ray structural analysis;;;Chemistry
+4;104025;Single-molecule chemistry;;;Chemistry
+4;104026;Spectroscopy;;;Chemistry
+4;104027;Computational chemistry;;;Chemistry
+2;105;Geosciences;;;NATURAL SCIENCES
+3;1051;"Geology; Mineralogy";;;Geosciences
+4;105101;General geology;;;"Geology; Mineralogy"
+4;105102;General geophysics;;;"Geology; Mineralogy"
+4;105103;Petroleum geology;;;"Geology; Mineralogy"
+4;105104;Erosion;;;"Geology; Mineralogy"
+4;105105;Geochemistry;;;"Geology; Mineralogy"
+4;105106;Geodynamics;;;"Geology; Mineralogy"
+4;105107;Geoelectrics;;;"Geology; Mineralogy"
+4;105108;Geostatistics;;;"Geology; Mineralogy"
+4;105109;Geothermics;;;"Geology; Mineralogy"
+4;105110;History of geology;;;"Geology; Mineralogy"
+4;105111;Gravimetry;;;"Geology; Mineralogy"
+4;105112;Historical geology;;;"Geology; Mineralogy"
+4;105113;Crystallography;;;"Geology; Mineralogy"
+4;105114;Cultural geology;;;"Geology; Mineralogy"
+4;105115;Magnetics;;;"Geology; Mineralogy"
+4;105116;Mineralogy;;;"Geology; Mineralogy"
+4;105117;Palaeobotany;;;"Geology; Mineralogy"
+4;105118;Palaeontology;;;"Geology; Mineralogy"
+4;105119;Petrography;;;"Geology; Mineralogy"
+4;105120;Petrology;;;"Geology; Mineralogy"
+4;105121;Sedimentology;;;"Geology; Mineralogy"
+4;105122;Seismic;;;"Geology; Mineralogy"
+4;105123;Stratigraphy;;;"Geology; Mineralogy"
+4;105124;Tectonics;;;"Geology; Mineralogy"
+4;105125;Petrophysics;;;"Geology; Mineralogy"
+4;105126;Applied geophysics;;;"Geology; Mineralogy"
+4;105127;Geochronology;;;"Geology; Mineralogy"
+4;105128;Geomicrobiology;;;"Geology; Mineralogy"
+3;1052;"Meteorology; Climatology";;;Geosciences
+4;105201;Aeronomy;;;"Meteorology; Climatology"
+4;105202;Agricultural meteorology;;;"Meteorology; Climatology"
+4;105203;Bioclimatology;;;"Meteorology; Climatology"
+4;105204;Climatology;;;"Meteorology; Climatology"
+4;105205;Climate change;;;"Meteorology; Climatology"
+4;105206;Meteorology;;;"Meteorology; Climatology"
+4;105207;Mountain meteorology;;;"Meteorology; Climatology"
+4;105208;Atmospheric chemistry;;;"Meteorology; Climatology"
+3;1053;Hydrology;;;Geosciences
+4;105301;Water protection;;;Hydrology
+4;105302;Hydrochemistry;;;Hydrology
+4;105303;Hydrogeology;;;Hydrology
+4;105304;Hydrology;;;Hydrology
+4;105305;Hydrometry;;;Hydrology
+4;105306;Oceanography;;;Hydrology
+4;105307;Water quality;;;Hydrology
+4;105308;Water resources;;;Hydrology
+3;1054;Physical Geography;;;Geosciences
+4;105401;Biogeography;;;Physical Geography
+4;105402;Soil geography;;;Physical Geography
+4;105403;Geoinformatics;;;Physical Geography
+4;105404;Geomorphology;;;Physical Geography
+4;105405;Geoecology;;;Physical Geography
+4;105406;History of geography;;;Physical Geography
+4;105407;Cartography;;;Physical Geography
+4;105408;Physical geography;;;Physical Geography
+4;105409;Topography;;;Physical Geography
+3;1059;Interdisciplinary Geosciences not elsewhere classified;;;Geosciences
+4;105901;Glaciology;;;Interdisciplinary Geosciences not elsewhere classified
+4;105902;Natural hazards;;;Interdisciplinary Geosciences not elsewhere classified
+4;105903;Speleology;;;Interdisciplinary Geosciences not elsewhere classified
+4;105904;Environmental research;;;Interdisciplinary Geosciences not elsewhere classified
+4;105905;Environmental protection;;;Interdisciplinary Geosciences not elsewhere classified
+4;105906;Environmental geosciences;;;Interdisciplinary Geosciences not elsewhere classified
+4;105907;Polar research;;;Interdisciplinary Geosciences not elsewhere classified
+2;106;Biology;;;NATURAL SCIENCES
+3;1060;Biology;;;Biology
+4;106001;General biology;;;Biology
+4;106002;Biochemistry;;;Biology
+4;106003;Biodiversity research;;;Biology
+4;106004;Bioethics;;;Biology
+4;106005;Bioinformatics;;;Biology
+4;106006;Biophysics;;;Biology
+4;106007;Biostatistics;;;Biology
+4;106008;Botany;;;Biology
+4;106009;Chronobiology;;;Biology
+4;106010;Developmental biology;;;Biology
+4;106011;"3Rs (replacement; reduction; refinement of animal testing)";;;Biology
+4;106012;Evolutionary research;;;Biology
+4;106013;Genetics;;;Biology
+4;106014;Genomics;;;Biology
+4;106015;Geobotany;;;Biology
+4;106016;History of biology;;;Biology
+4;106017;Glycobiology;;;Biology
+4;106018;Human biology;;;Biology
+4;106019;Hydrobiology;;;Biology
+4;106020;Limnology;;;Biology
+4;106021;Marine biology;;;Biology
+4;106022;Microbiology;;;Biology
+4;106023;Molecular biology;;;Biology
+4;106024;Mycology;;;Biology
+4;106025;Neurobiology;;;Biology
+4;106026;Ecosystem research;;;Biology
+4;106027;Ecotoxicology;;;Biology
+4;106028;Plant anatomy;;;Biology
+4;106029;Plant morphology;;;Biology
+4;106030;Plant ecology;;;Biology
+4;106031;Plant physiology;;;Biology
+4;106032;Photobiology;;;Biology
+4;106033;Phylogeny;;;Biology
+4;106034;Phytochemistry;;;Biology
+4;106035;Phytogeography;;;Biology
+4;106036;Population genetics;;;Biology
+4;106037;Proteomics;;;Biology
+4;106038;Reproductive biology;;;Biology
+4;106039;Stem cell research;;;Biology
+4;106040;Radiation biology;;;Biology
+4;106041;Structural biology;;;Biology
+4;106042;Systematic botany;;;Biology
+4;106043;Systematic zoology;;;Biology
+4;106044;Systems biology;;;Biology
+4;106045;Theoretical biology;;;Biology
+4;106046;Animal anatomy;;;Biology
+4;106047;Animal ecology;;;Biology
+4;106048;Animal physiology;;;Biology
+4;106049;Ultrastructure research;;;Biology
+4;106050;Vegetation science;;;Biology
+4;106051;Behavioural biology;;;Biology
+4;106052;Cell biology;;;Biology
+4;106053;Zoogeography;;;Biology
+4;106054;Zoology;;;Biology
+4;106055;Aerobiology;;;Biology
+4;106056;Biological anthropology;;;Biology
+4;106057;Metabolomics;;;Biology
+4;106058;Soil biology;;;Biology
+4;106059;Microbiome research;;;Biology
+4;106060;Animal ethics;;;Biology
+2;107;Other Natural Sciences;;;NATURAL SCIENCES
+3;1070;Other Natural Sciences;;;Other Natural Sciences
+4;107001;Archaeometry;;;Other Natural Sciences
+4;107002;Bionics;;;Other Natural Sciences
+4;107003;History of natural sciences;;;Other Natural Sciences
+4;107004;Human ecology;;;Other Natural Sciences
+4;107005;Food testing;;;Other Natural Sciences
+4;107006;Nature conservation;;;Other Natural Sciences
+4;107007;Risk research;;;Other Natural Sciences
+4;107008;Archaeobotany;;;Other Natural Sciences
+4;107009;Archaeozoology;;;Other Natural Sciences
+4;107010;Geoarchaeology;;;Other Natural Sciences
+1;2;TECHNICAL SCIENCES;;;
+2;201;Construction Engineering;;;TECHNICAL SCIENCES
+3;2011;Civil Engineering;;;Construction Engineering
+4;201101;Construction operation;;;Civil Engineering
+4;201102;Structural dynamics;;;Civil Engineering
+4;201103;Building physics;;;Civil Engineering
+4;201104;Structural analysis;;;Civil Engineering
+4;201105;Construction material practice;;;Civil Engineering
+4;201106;Structural engineering;;;Civil Engineering
+4;201107;Endurance strength;;;Civil Engineering
+4;201108;Fracture mechanics;;;Civil Engineering
+4;201109;Bridge construction;;;Civil Engineering
+4;201110;Strength of materials;;;Civil Engineering
+4;201111;River engineering;;;Civil Engineering
+4;201112;Building construction;;;Civil Engineering
+4;201113;Timber engineering;;;Civil Engineering
+4;201114;Industrial building;;;Civil Engineering
+4;201115;Structural hydraulic engineering;;;Civil Engineering
+4;201116;Agricultural civil engineering;;;Civil Engineering
+4;201117;Lightweight design;;;Civil Engineering
+4;201118;Urban water supply and sanitation;;;Civil Engineering
+4;201119;Steel construction;;;Civil Engineering
+4;201120;Reinforced concrete construction;;;Civil Engineering
+4;201121;Road construction;;;Civil Engineering
+4;201122;Technical flood protection;;;Civil Engineering
+4;201123;Underground engineering;;;Civil Engineering
+4;201124;Structural design;;;Civil Engineering
+4;201125;Hydraulic engineering;;;Civil Engineering
+4;201126;Hydropower plant construction;;;Civil Engineering
+4;201127;Torrent and avalanche control;;;Civil Engineering
+4;201128;Sustainable building;;;Civil Engineering
+4;201129;Earthquake engineering;;;Civil Engineering
+4;201130;Structural glass construction;;;Civil Engineering
+4;201131;Building history;;;Civil Engineering
+4;201132;Computational engineering;;;Civil Engineering
+3;2012;Architecture;;;Construction Engineering
+4;201201;History of architecture;;;Architecture
+4;201202;Architectural modelling;;;Architecture
+4;201203;Architectural theory;;;Architecture
+4;201204;Barrier-free building;;;Architecture
+4;201205;Building research;;;Architecture
+4;201206;Designing;;;Architecture
+4;201207;Building typology;;;Architecture
+4;201208;Industrial architecture;;;Architecture
+4;201209;Interior design;;;Architecture
+4;201210;Landscape architecture;;;Architecture
+4;201211;Solar architecture;;;Architecture
+4;201212;Urban design;;;Architecture
+4;201213;Housing;;;Architecture
+4;201214;Experimental architecture;;;Architecture
+4;201215;Building cultural heritage;;;Architecture
+3;2013;Transportation;;;Construction Engineering
+4;201301;Railway construction;;;Transportation
+4;201302;Railway engineering;;;Transportation
+4;201303;Ropeways;;;Transportation
+4;201304;Road construction;;;Transportation
+4;201305;Traffic engineering;;;Transportation
+4;201306;Traffic telematics;;;Transportation
+4;201307;Transport economics;;;Transportation
+3;2019;Construction Engineering not elsewhere classified;;;Construction Engineering
+4;201901;Old building renovation;;;Construction Engineering not elsewhere classified
+4;201902;Building ecology;;;Construction Engineering not elsewhere classified
+4;201903;Soil bioengineering;;;Construction Engineering not elsewhere classified
+4;201904;Vegetation technology;;;Construction Engineering not elsewhere classified
+4;201905;Building within existing structures;;;Construction Engineering not elsewhere classified
+4;201906;Building-integrated vegetation;;;Construction Engineering not elsewhere classified
+2;202;"Electrical Engineering; Electronics; Information Engineering";;;TECHNICAL SCIENCES
+3;2020;"Electrical Engineering; Electronics; Information Engineering";;;"Electrical Engineering; Electronics; Information Engineering"
+4;202001;Audio technology;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202002;Audiovisual media;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202003;Automation;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202004;Brain-computer interface;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202005;Computer architecture;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202006;Computer hardware;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202007;Computer integrated manufacturing (CIM);;;"Electrical Engineering; Electronics; Information Engineering"
+4;202008;Electrical power systems;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202009;Electrical drive engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202010;Electric power engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202011;Electrical machines;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202012;Electrical measurement technology;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202013;Electromagnetic compatibility;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202014;Electromagnetism;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202015;Electronics;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202016;Electrical engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202017;Embedded systems;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202018;Semiconductor electronics;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202019;High frequency engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202020;High voltage engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202021;Industrial electronics;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202022;Information technology;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202023;Integrated circuits;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202024;Laser technology;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202025;Power electronics;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202026;Light technology;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202027;Mechatronics;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202028;Microelectronics;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202029;Microwave engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202030;Communication engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202031;Network engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202032;Photovoltaics;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202033;Radar technology;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202034;Control engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202035;Robotics;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202036;Sensor systems;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202037;Signal processing;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202038;Telecommunications;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202039;Theoretical electrical engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202040;Transmission technology;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202041;Computer engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202042;Optical communication engineering;;;"Electrical Engineering; Electronics; Information Engineering"
+4;202043;Network security;;;"Electrical Engineering; Electronics; Information Engineering"
+2;203;Mechanical Engineering;;;TECHNICAL SCIENCES
+3;2030;Mechanical Engineering;;;Mechanical Engineering
+4;203001;Apparatus engineering;;;Mechanical Engineering
+4;203002;Endurance strength;;;Mechanical Engineering
+4;203003;Fracture mechanics;;;Mechanical Engineering
+4;203004;Automotive technology;;;Mechanical Engineering
+4;203005;Precision engineering;;;Mechanical Engineering
+4;203006;Production engineering;;;Mechanical Engineering
+4;203007;Strength of materials;;;Mechanical Engineering
+4;203008;Conveyor technology;;;Mechanical Engineering
+4;203009;Refrigeration engineering;;;Mechanical Engineering
+4;203010;Air conditioning technology;;;Mechanical Engineering
+4;203011;Lightweight design;;;Mechanical Engineering
+4;203012;Aerospace engineering;;;Mechanical Engineering
+4;203013;Mechanical engineering;;;Mechanical Engineering
+4;203014;Machine dynamics;;;Mechanical Engineering
+4;203015;Mechatronics;;;Mechanical Engineering
+4;203016;Measurement engineering;;;Mechanical Engineering
+4;203017;Micromechanics;;;Mechanical Engineering
+4;203018;Heavy machinery construction;;;Mechanical Engineering
+4;203019;Reactor technology;;;Mechanical Engineering
+4;203020;Welding engineering;;;Mechanical Engineering
+4;203021;Fluid-flow machinery;;;Mechanical Engineering
+4;203022;Technical mechanics;;;Mechanical Engineering
+4;203023;Thermal turbomachinery;;;Mechanical Engineering
+4;203024;Thermodynamics;;;Mechanical Engineering
+4;203025;Tribology;;;Mechanical Engineering
+4;203026;Forming;;;Mechanical Engineering
+4;203027;Internal combustion engines;;;Mechanical Engineering
+4;203028;Thermal engineering;;;Mechanical Engineering
+4;203029;Tool construction;;;Mechanical Engineering
+4;203030;Fuel cell technology;;;Mechanical Engineering
+4;203031;Engineering design;;;Mechanical Engineering
+4;203032;Additive manufacturing;;;Mechanical Engineering
+4;203033;Hydraulic drive technology;;;Mechanical Engineering
+4;203034;Continuum mechanics;;;Mechanical Engineering
+4;203035;Thermal processing technology;;;Mechanical Engineering
+4;203036;Weapons and munitions technology;;;Mechanical Engineering
+4;203037;Computational engineering;;;Mechanical Engineering
+4;203038;Ventilation technology;;;Mechanical Engineering
+2;204;Chemical Process Engineering;;;TECHNICAL SCIENCES
+3;2040;Chemical Process Engineering;;;Chemical Process Engineering
+4;204001;Inorganic chemical technology;;;Chemical Process Engineering
+4;204002;Chemical reaction engineering;;;Chemical Process Engineering
+4;204003;Chemical process engineering;;;Chemical Process Engineering
+4;204004;Organic chemical technology;;;Chemical Process Engineering
+4;204005;Refining technology;;;Chemical Process Engineering
+4;204006;Mechanical process engineering;;;Chemical Process Engineering
+4;204007;Thermal process engineering;;;Chemical Process Engineering
+4;204008;Membrane technology;;;Chemical Process Engineering
+2;205;Materials Engineering;;;TECHNICAL SCIENCES
+3;2050;Materials Engineering;;;Materials Engineering
+4;205001;Building materials testing;;;Materials Engineering
+4;205002;Coating technology;;;Materials Engineering
+4;205003;Refractories;;;Materials Engineering
+4;205004;Functional materials;;;Materials Engineering
+4;205005;Ceramics engineering;;;Materials Engineering
+4;205006;Wood research;;;Materials Engineering
+4;205007;Wood preservatives;;;Materials Engineering
+4;205008;Wood technology;;;Materials Engineering
+4;205009;Ceramic materials;;;Materials Engineering
+4;205010;Anticorrosives;;;Materials Engineering
+4;205011;Polymer engineering;;;Materials Engineering
+4;205012;Polymer processing;;;Materials Engineering
+4;205013;Failure analysis;;;Materials Engineering
+4;205014;Textile technology;;;Materials Engineering
+4;205015;Composites;;;Materials Engineering
+4;205016;Materials testing;;;Materials Engineering
+4;205017;Materials engineering;;;Materials Engineering
+4;205018;Pulp and paper technology;;;Materials Engineering
+4;205019;Material sciences;;;Materials Engineering
+2;206;Medical Engineering;;;TECHNICAL SCIENCES
+3;2060;Medical Engineering;;;Medical Engineering
+4;206001;Biomedical engineering;;;Medical Engineering
+4;206002;Electro-medical engineering;;;Medical Engineering
+4;206003;Medical physics;;;Medical Engineering
+4;206004;Medical engineering;;;Medical Engineering
+4;206005;Prosthetics;;;Medical Engineering
+4;206006;Rehabilitation technology;;;Medical Engineering
+2;207;"Environmental Engineering; Applied Geosciences";;;TECHNICAL SCIENCES
+3;2071;Environmental Engineering;;;"Environmental Engineering; Applied Geosciences"
+4;207101;Waste engineering;;;Environmental Engineering
+4;207102;Exhaust air purification;;;Environmental Engineering
+4;207103;Wastewater treatment;;;Environmental Engineering
+4;207104;Remediation of contaminated sites;;;Environmental Engineering
+4;207105;Landfill technology;;;Environmental Engineering
+4;207106;Renewable energy;;;Environmental Engineering
+4;207107;Air pollution control;;;Environmental Engineering
+4;207108;Recycling;;;Environmental Engineering
+4;207109;Pollutant emission;;;Environmental Engineering
+4;207110;Technical environmental protection;;;Environmental Engineering
+4;207111;Environmental engineering;;;Environmental Engineering
+4;207112;Water treatment;;;Environmental Engineering
+4;207113;Water infrastructure;;;Environmental Engineering
+4;207114;Water management;;;Environmental Engineering
+3;2072;"Engineering Geology; Geotechnics";;;"Environmental Engineering; Applied Geosciences"
+4;207201;Soil mechanics;;;"Engineering Geology; Geotechnics"
+4;207202;Earthworks;;;"Engineering Geology; Geotechnics"
+4;207203;Rock mechanics;;;"Engineering Geology; Geotechnics"
+4;207204;Geotechnics;;;"Engineering Geology; Geotechnics"
+4;207205;Foundation engineering;;;"Engineering Geology; Geotechnics"
+4;207206;Engineering geology;;;"Engineering Geology; Geotechnics"
+4;207207;Tunnelling;;;"Engineering Geology; Geotechnics"
+4;207208;Tunnel ventilation;;;"Engineering Geology; Geotechnics"
+3;2073;"Mining; Petroleum Engineering";;;"Environmental Engineering; Applied Geosciences"
+4;207301;Processing of mineral raw materials;;;"Mining; Petroleum Engineering"
+4;207302;Mining engineering;;;"Mining; Petroleum Engineering"
+4;207303;Mining damage;;;"Mining; Petroleum Engineering"
+4;207304;Natural gas production;;;"Mining; Petroleum Engineering"
+4;207305;Natural gas engineering;;;"Mining; Petroleum Engineering"
+4;207306;Petroleum geology;;;"Mining; Petroleum Engineering"
+4;207307;Petroleum production;;;"Mining; Petroleum Engineering"
+4;207308;Petroleum engineering;;;"Mining; Petroleum Engineering"
+4;207309;History of mining;;;"Mining; Petroleum Engineering"
+4;207310;Extraction of mineral raw materials;;;"Mining; Petroleum Engineering"
+4;207311;Economic geology;;;"Mining; Petroleum Engineering"
+4;207312;Mine surveying;;;"Mining; Petroleum Engineering"
+4;207313;Drilling engineering;;;"Mining; Petroleum Engineering"
+4;207314;Underground mining;;;"Mining; Petroleum Engineering"
+3;2074;"Geodesy; Surveying";;;"Environmental Engineering; Applied Geosciences"
+4;207401;3D-surveying;;;"Geodesy; Surveying"
+4;207402;Remote sensing;;;"Geodesy; Surveying"
+4;207403;Geodesy;;;"Geodesy; Surveying"
+4;207404;Geoinformatics;;;"Geodesy; Surveying"
+4;207405;Engineering geodesy;;;"Geodesy; Surveying"
+4;207406;Cartography;;;"Geodesy; Surveying"
+4;207407;Cadastral surveying;;;"Geodesy; Surveying"
+4;207408;Land surveying;;;"Geodesy; Surveying"
+4;207409;Navigation systems;;;"Geodesy; Surveying"
+4;207410;Photogrammetry;;;"Geodesy; Surveying"
+4;207411;Satellite geodesy;;;"Geodesy; Surveying"
+4;207412;Satellite-based coordinate measuring;;;"Geodesy; Surveying"
+4;207413;Surveying;;;"Geodesy; Surveying"
+3;2079;"Environmental Engineering; Applied Geosciences not elsewhere classified";;;"Environmental Engineering; Applied Geosciences"
+4;207901;Offshore technology;;;"Environmental Engineering; Applied Geosciences not elsewhere classified"
+4;207902;Computational geosciences;;;"Environmental Engineering; Applied Geosciences not elsewhere classified"
+2;208;Environmental Biotechnology;;;TECHNICAL SCIENCES
+3;2080;Environmental Biotechnology;;;Environmental Biotechnology
+4;208001;Bioremediation;;;Environmental Biotechnology
+4;208002;Environmental biotechnology related ethics;;;Environmental Biotechnology
+4;208003;Environmental biotechnology;;;Environmental Biotechnology
+2;209;Industrial Biotechnology;;;TECHNICAL SCIENCES
+3;2090;Industrial Biotechnology;;;Industrial Biotechnology
+4;209001;Biocatalysis;;;Industrial Biotechnology
+4;209002;Bioprocess technology;;;Industrial Biotechnology
+4;209003;Biofuels;;;Industrial Biotechnology
+4;209004;Enzyme technology;;;Industrial Biotechnology
+4;209005;Fermentation;;;Industrial Biotechnology
+4;209006;Industrial biotechnology;;;Industrial Biotechnology
+2;210;Nanotechnology;;;TECHNICAL SCIENCES
+3;2100;Nanotechnology;;;Nanotechnology
+4;210001;Nanoanalytics;;;Nanotechnology
+4;210002;Nanobiotechnology;;;Nanotechnology
+4;210003;Nanoelectronics;;;Nanotechnology
+4;210004;Nanomaterials;;;Nanotechnology
+4;210005;Nanophotonics;;;Nanotechnology
+4;210006;Nanotechnology;;;Nanotechnology
+2;211;Other Technical Sciences;;;TECHNICAL SCIENCES
+3;2111;Metallurgy;;;Other Technical Sciences
+4;211101;Iron and steel metallurgy;;;Metallurgy
+4;211102;Casting technology;;;Metallurgy
+4;211103;Physical metallurgy;;;Metallurgy
+4;211104;Metallurgy;;;Metallurgy
+4;211105;Nonferrous metallurgy;;;Metallurgy
+4;211106;Light metals;;;Metallurgy
+4;211107;Secondary metallurgy;;;Metallurgy
+3;2112;Food Technology;;;Other Technical Sciences
+4;211201;Grain technology;;;Food Technology
+4;211202;Food technology;;;Food Technology
+4;211203;Food processing engineering;;;Food Technology
+4;211204;Meat technology;;;Food Technology
+3;2119;Technical Sciences not elsewhere classified;;;Other Technical Sciences
+4;211901;Waste prevention;;;Technical Sciences not elsewhere classified
+4;211902;Assistive technologies;;;Technical Sciences not elsewhere classified
+4;211903;Science of management;;;Technical Sciences not elsewhere classified
+4;211904;Biomechanics;;;Technical Sciences not elsewhere classified
+4;211905;Bionics;;;Technical Sciences not elsewhere classified
+4;211906;Fire protection;;;Technical Sciences not elsewhere classified
+4;211907;Energy saving;;;Technical Sciences not elsewhere classified
+4;211908;Energy research;;;Technical Sciences not elsewhere classified
+4;211909;Energy technology;;;Technical Sciences not elsewhere classified
+4;211910;Noise protection;;;Technical Sciences not elsewhere classified
+4;211911;Sustainable technologies;;;Technical Sciences not elsewhere classified
+4;211912;Product design;;;Technical Sciences not elsewhere classified
+4;211913;Quality assurance;;;Technical Sciences not elsewhere classified
+4;211914;Risk research;;;Technical Sciences not elsewhere classified
+4;211915;Solar technology;;;Technical Sciences not elsewhere classified
+4;211916;Blasting engineering;;;Technical Sciences not elsewhere classified
+4;211917;Technology assessment;;;Technical Sciences not elsewhere classified
+4;211918;Technical history;;;Technical Sciences not elsewhere classified
+4;211919;Thermography;;;Technical Sciences not elsewhere classified
+4;211920;Packaging technology;;;Technical Sciences not elsewhere classified
+4;211921;Civil protection and disaster control;;;Technical Sciences not elsewhere classified
+4;211922;Energy storage;;;Technical Sciences not elsewhere classified
+4;211923;Factory planning;;;Technical Sciences not elsewhere classified
+4;211924;Process and plant safety;;;Technical Sciences not elsewhere classified
+4;211925;Explosion research;;;Technical Sciences not elsewhere classified
+4;211926;Technology ethics;;;Technical Sciences not elsewhere classified
+1;3;"HUMAN MEDICINE; HEALTH SCIENCES";;;
+2;301;"Medical-Theoretical Sciences; Pharmacy";;;"HUMAN MEDICINE; HEALTH SCIENCES"
+3;3011;"Anatomy; Pathology; Physiology";;;"Medical-Theoretical Sciences; Pharmacy"
+4;301101;General pathology;;;"Anatomy; Pathology; Physiology"
+4;301102;Anatomy;;;"Anatomy; Pathology; Physiology"
+4;301103;Medical diagnostics;;;"Anatomy; Pathology; Physiology"
+4;301104;Embryology;;;"Anatomy; Pathology; Physiology"
+4;301105;Experimental pathology;;;"Anatomy; Pathology; Physiology"
+4;301106;Functional anatomy;;;"Anatomy; Pathology; Physiology"
+4;301107;Histology;;;"Anatomy; Pathology; Physiology"
+4;301108;Molecular pathology;;;"Anatomy; Pathology; Physiology"
+4;301109;Pathophysiology;;;"Anatomy; Pathology; Physiology"
+4;301110;Physiology;;;"Anatomy; Pathology; Physiology"
+4;301111;Radiologic anatomy;;;"Anatomy; Pathology; Physiology"
+4;301112;Systematic anatomy;;;"Anatomy; Pathology; Physiology"
+4;301113;Topographic anatomy;;;"Anatomy; Pathology; Physiology"
+4;301114;Cell biology;;;"Anatomy; Pathology; Physiology"
+4;301115;Sonoanatomy;;;"Anatomy; Pathology; Physiology"
+3;3012;"Pharmacy; Pharmacology; Toxicology";;;"Medical-Theoretical Sciences; Pharmacy"
+4;301201;Pharmaceutical and drug analysis;;;"Pharmacy; Pharmacology; Toxicology"
+4;301202;History of pharmacy;;;"Pharmacy; Pharmacology; Toxicology"
+4;301203;Pharmacodynamics;;;"Pharmacy; Pharmacology; Toxicology"
+4;301204;Pharmacognosy;;;"Pharmacy; Pharmacology; Toxicology"
+4;301205;Pharmacokinetics;;;"Pharmacy; Pharmacology; Toxicology"
+4;301206;Pharmacology;;;"Pharmacy; Pharmacology; Toxicology"
+4;301207;Pharmaceutical chemistry;;;"Pharmacy; Pharmacology; Toxicology"
+4;301208;Pharmaceutical technology;;;"Pharmacy; Pharmacology; Toxicology"
+4;301209;Pharmacy;;;"Pharmacy; Pharmacology; Toxicology"
+4;301210;Psychopharmacology;;;"Pharmacy; Pharmacology; Toxicology"
+4;301211;Toxicology;;;"Pharmacy; Pharmacology; Toxicology"
+4;301212;Clinical pharmacy;;;"Pharmacy; Pharmacology; Toxicology"
+4;301213;Drug targeting;;;"Pharmacy; Pharmacology; Toxicology"
+4;301214;Biopharmacy;;;"Pharmacy; Pharmacology; Toxicology"
+4;301215;Drug safety;;;"Pharmacy; Pharmacology; Toxicology"
+3;3013;"Medical Biochemistry; Human Genetics";;;"Medical-Theoretical Sciences; Pharmacy"
+4;301301;Human genetics;;;"Medical Biochemistry; Human Genetics"
+4;301302;Lipidomics research;;;"Medical Biochemistry; Human Genetics"
+4;301303;Medical biochemistry;;;"Medical Biochemistry; Human Genetics"
+4;301304;Medical biology;;;"Medical Biochemistry; Human Genetics"
+4;301305;Medical chemistry;;;"Medical Biochemistry; Human Genetics"
+4;301306;Medical molecular biology;;;"Medical Biochemistry; Human Genetics"
+4;301307;Cytogenetics;;;"Medical Biochemistry; Human Genetics"
+4;301308;Ageing research;;;"Medical Biochemistry; Human Genetics"
+3;3014;Neurosciences;;;"Medical-Theoretical Sciences; Pharmacy"
+4;301401;Brain research;;;Neurosciences
+4;301402;Neurobiology;;;Neurosciences
+4;301403;Neurochemistry;;;Neurosciences
+4;301404;Neuroimmunology;;;Neurosciences
+4;301405;Neuropathology;;;Neurosciences
+4;301406;Neuropharmacology;;;Neurosciences
+4;301407;Neurophysiology;;;Neurosciences
+4;301408;Psychophysiology;;;Neurosciences
+4;301409;Neuroanatomy;;;Neurosciences
+3;3019;Medical-Theoretical Sciences not elsewhere classified;;;"Medical-Theoretical Sciences; Pharmacy"
+4;301901;Blood group serology;;;Medical-Theoretical Sciences not elsewhere classified
+4;301902;Immunology;;;Medical-Theoretical Sciences not elsewhere classified
+4;301903;Vaccine development;;;Medical-Theoretical Sciences not elsewhere classified
+4;301904;Cancer research;;;Medical-Theoretical Sciences not elsewhere classified
+4;301905;Psychoneuroimmunology;;;Medical-Theoretical Sciences not elsewhere classified
+4;301906;Serology;;;Medical-Theoretical Sciences not elsewhere classified
+4;301907;Biobanking;;;Medical-Theoretical Sciences not elsewhere classified
+2;302;Clinical Medicine;;;"HUMAN MEDICINE; HEALTH SCIENCES"
+3;3020;Clinical Medicine;;;Clinical Medicine
+4;302001;Acupuncture;;;Clinical Medicine
+4;302002;Allergology;;;Clinical Medicine
+4;302003;General surgery;;;Clinical Medicine
+4;302004;Anaesthesiology;;;Clinical Medicine
+4;302005;Andrology;;;Clinical Medicine
+4;302006;Angiology;;;Clinical Medicine
+4;302007;Ophthalmology;;;Clinical Medicine
+4;302008;Balneology;;;Clinical Medicine
+4;302009;Chemotherapy;;;Clinical Medicine
+4;302010;Computed tomography (CT);;;Clinical Medicine
+4;302011;Dermatology;;;Clinical Medicine
+4;302012;Diabetology;;;Clinical Medicine
+4;302013;Medical diagnostics;;;Clinical Medicine
+4;302014;Endocrinology;;;Clinical Medicine
+4;302015;Experimental surgery;;;Clinical Medicine
+4;302016;Gastroenterology;;;Clinical Medicine
+4;302017;Obstetrics;;;Clinical Medicine
+4;302018;Vascular surgery;;;Clinical Medicine
+4;302019;Geriatrics;;;Clinical Medicine
+4;302020;Gerontology;;;Clinical Medicine
+4;302021;History of psychiatry;;;Clinical Medicine
+4;302022;Gynaecology;;;Clinical Medicine
+4;302023;"Ear; nose and throat medicine";;;Clinical Medicine
+4;302024;Haematology;;;Clinical Medicine
+4;302025;Hepatology;;;Clinical Medicine
+4;302026;Heart surgery;;;Clinical Medicine
+4;302027;"Hearing; voice and language disorders";;;Clinical Medicine
+4;302028;Hyperbaric medicine;;;Clinical Medicine
+4;302029;Implantology;;;Clinical Medicine
+4;302030;Internal medicine;;;Clinical Medicine
+4;302031;Intensive care medicine;;;Clinical Medicine
+4;302032;Cardiology;;;Clinical Medicine
+4;302033;Jaw surgery;;;Clinical Medicine
+4;302034;Orthodontics;;;Clinical Medicine
+4;302035;Paediatrics and adolescent medicine;;;Clinical Medicine
+4;302036;Child and adolescent psychiatry;;;Clinical Medicine
+4;302037;Paediatric surgery;;;Clinical Medicine
+4;302038;Clinical neuropsychology;;;Clinical Medicine
+4;302039;Complementary medicine;;;Clinical Medicine
+4;302040;Laboratory diagnostics;;;Clinical Medicine
+4;302041;Laser surgery;;;Clinical Medicine
+4;302042;Logopedics;;;Clinical Medicine
+4;302043;Magnetic resonance imaging (MRI);;;Clinical Medicine
+4;302044;Medical physics;;;Clinical Medicine
+4;302045;Medical psychology;;;Clinical Medicine
+4;302046;Medical psychotherapy;;;Clinical Medicine
+4;302047;Microsurgery;;;Clinical Medicine
+4;302048;Minimally invasive surgery;;;Clinical Medicine
+4;302049;Neonatology;;;Clinical Medicine
+4;302050;Nephrology;;;Clinical Medicine
+4;302051;Neurosurgery;;;Clinical Medicine
+4;302052;Neurology;;;Clinical Medicine
+4;302053;Emergency medicine;;;Clinical Medicine
+4;302054;Nuclear medicine;;;Clinical Medicine
+4;302055;Oncology;;;Clinical Medicine
+4;302056;Oncological surgery;;;Clinical Medicine
+4;302057;Orthopaedics;;;Clinical Medicine
+4;302058;Palliative medicine;;;Clinical Medicine
+4;302059;Periodontology;;;Clinical Medicine
+4;302060;Perinatology;;;Clinical Medicine
+4;302061;Physical medicine;;;Clinical Medicine
+4;302062;Plastic and reconstructive surgery;;;Clinical Medicine
+4;302063;Multiple trauma care;;;Clinical Medicine
+4;302064;Prenatal diagnostics;;;Clinical Medicine
+4;302065;Clinical psychiatry;;;Clinical Medicine
+4;302066;Psychopathology;;;Clinical Medicine
+4;302067;Psychosomatics;;;Clinical Medicine
+4;302068;Pulmology;;;Clinical Medicine
+4;302069;Radiosurgery;;;Clinical Medicine
+4;302070;Radiodiagnostics;;;Clinical Medicine
+4;302071;Radiology;;;Clinical Medicine
+4;302072;Rheumatology;;;Clinical Medicine
+4;302073;Sleep medicine;;;Clinical Medicine
+4;302074;Pain medicine;;;Clinical Medicine
+4;302075;Sonography;;;Clinical Medicine
+4;302076;Social psychiatry;;;Clinical Medicine
+4;302077;Stem cell transplantation;;;Clinical Medicine
+4;302078;Metabolic diseases;;;Clinical Medicine
+4;302079;Radiation protection;;;Clinical Medicine
+4;302080;Radiotherapy;;;Clinical Medicine
+4;302081;Thoracic surgery;;;Clinical Medicine
+4;302082;Transfusion medicine;;;Clinical Medicine
+4;302083;Transplant surgery;;;Clinical Medicine
+4;302084;Transplantation medicine;;;Clinical Medicine
+4;302085;Trauma surgery;;;Clinical Medicine
+4;302086;Urology;;;Clinical Medicine
+4;302087;Venereology;;;Clinical Medicine
+4;302088;Dentistry;;;Clinical Medicine
+4;302089;Reproductive medicine;;;Clinical Medicine
+4;302090;General practice;;;Clinical Medicine
+4;302091;Immunotherapy;;;Clinical Medicine
+4;302092;Oral surgery;;;Clinical Medicine
+4;302093;Restorative dentistry;;;Clinical Medicine
+2;303;Health Sciences;;;"HUMAN MEDICINE; HEALTH SCIENCES"
+3;3030;Health Sciences;;;Health Sciences
+4;303001;Occupational medicine;;;Health Sciences
+4;303002;Bacteriology;;;Health Sciences
+4;303003;Occupational diseases;;;Health Sciences
+4;303004;Kinesiology;;;Health Sciences
+4;303005;Sports biomechanics;;;Health Sciences
+4;303006;Dietetics;;;Health Sciences
+4;303007;Epidemiology;;;Health Sciences
+4;303008;Ergonomics;;;Health Sciences
+4;303009;Nutritional sciences;;;Health Sciences
+4;303010;Health economics;;;Health Sciences
+4;303011;Health policy;;;Health Sciences
+4;303012;Health sciences;;;Health Sciences
+4;303013;Hygiene;;;Health Sciences
+4;303014;Vaccine protection;;;Health Sciences
+4;303015;Hospital hygiene;;;Health Sciences
+4;303016;Hospital management;;;Health Sciences
+4;303017;Food hygiene;;;Health Sciences
+4;303018;Air hygiene;;;Health Sciences
+4;303019;Medical ethics;;;Health Sciences
+4;303020;Medical microbiology;;;Health Sciences
+4;303021;Medical rehabilitation;;;Health Sciences
+4;303022;Palliative care;;;Health Sciences
+4;303023;Parasitology;;;Health Sciences
+4;303024;Nursing science;;;Health Sciences
+4;303025;Preventive medicine;;;Health Sciences
+4;303026;Public health;;;Health Sciences
+4;303027;Social medicine;;;Health Sciences
+4;303028;Sport science;;;Health Sciences
+4;303029;Addiction research;;;Health Sciences
+4;303030;Training science;;;Health Sciences
+4;303031;Tropical medicine;;;Health Sciences
+4;303032;Environmental hygiene;;;Health Sciences
+4;303033;Environmental medicine;;;Health Sciences
+4;303034;Virology;;;Health Sciences
+4;303035;Water hygiene;;;Health Sciences
+4;303036;Patient safety;;;Health Sciences
+4;303037;Occupational therapy;;;Health Sciences
+4;303038;Physiotherapy;;;Health Sciences
+4;303039;Radiological technology;;;Health Sciences
+4;303040;Health services research;;;Health Sciences
+2;304;Medical Biotechnology;;;"HUMAN MEDICINE; HEALTH SCIENCES"
+3;3040;Medical Biotechnology;;;Medical Biotechnology
+4;304001;Medical biotechnology related ethics;;;Medical Biotechnology
+4;304002;Genetic diagnostics;;;Medical Biotechnology
+4;304003;Genetic engineering;;;Medical Biotechnology
+4;304004;Gene therapy;;;Medical Biotechnology
+4;304005;Medical biotechnology;;;Medical Biotechnology
+4;304006;Pharmacogenomics;;;Medical Biotechnology
+4;304007;Tissue engineering;;;Medical Biotechnology
+4;304008;Regenerative medicine;;;Medical Biotechnology
+2;305;"Other Human Medicine; Health Sciences";;;"HUMAN MEDICINE; HEALTH SCIENCES"
+3;3051;Forensic Medicine;;;"Other Human Medicine; Health Sciences"
+4;305101;Bloodstain pattern analysis;;;Forensic Medicine
+4;305102;DNA analysis (Forensic medicine);;;Forensic Medicine
+4;305103;Forensic biology;;;Forensic Medicine
+4;305104;Forensic chemistry;;;Forensic Medicine
+4;305105;Forensic psychiatry;;;Forensic Medicine
+4;305106;Forensic radiology;;;Forensic Medicine
+4;305107;Forensic toxicology;;;Forensic Medicine
+4;305108;Forensic human medicine;;;Forensic Medicine
+4;305109;Forensic anthropology;;;Forensic Medicine
+3;3059;"Human Medicine; Health Sciences not elsewhere classified";;;"Other Human Medicine; Health Sciences"
+4;305901;Computer-aided diagnosis and therapy;;;"Human Medicine; Health Sciences not elsewhere classified"
+4;305902;Gender medicine;;;"Human Medicine; Health Sciences not elsewhere classified"
+4;305903;History of medicine;;;"Human Medicine; Health Sciences not elsewhere classified"
+4;305904;Medical documentation;;;"Human Medicine; Health Sciences not elsewhere classified"
+4;305905;Medical informatics;;;"Human Medicine; Health Sciences not elsewhere classified"
+4;305906;Medical cybernetics;;;"Human Medicine; Health Sciences not elsewhere classified"
+4;305907;Medical statistics;;;"Human Medicine; Health Sciences not elsewhere classified"
+4;305908;Sports medicine;;;"Human Medicine; Health Sciences not elsewhere classified"
+4;305909;Stress research;;;"Human Medicine; Health Sciences not elsewhere classified"
+4;305910;Traffic medicine;;;"Human Medicine; Health Sciences not elsewhere classified"
+1;4;"AGRICULTURAL SCIENCES; VETERINARY MEDICINE";;;
+2;401;"Agriculture and Forestry; Fishery";;;"AGRICULTURAL SCIENCES; VETERINARY MEDICINE"
+3;4011;"Cultivation of Land; Horticulture";;;"Agriculture and Forestry; Fishery"
+4;401101;Cultivation of land;;;"Cultivation of Land; Horticulture"
+4;401102;Irrigation management;;;"Cultivation of Land; Horticulture"
+4;401103;Horticulture;;;"Cultivation of Land; Horticulture"
+4;401104;Vegetable growing;;;"Cultivation of Land; Horticulture"
+4;401105;Grain cultivation;;;"Cultivation of Land; Horticulture"
+4;401106;Landscape conservation;;;"Cultivation of Land; Horticulture"
+4;401107;Agricultural engineering;;;"Cultivation of Land; Horticulture"
+4;401108;Fruit growing;;;"Cultivation of Land; Horticulture"
+4;401109;Organic farming;;;"Cultivation of Land; Horticulture"
+4;401110;Plant cultivation;;;"Cultivation of Land; Horticulture"
+4;401111;Plant nutrition;;;"Cultivation of Land; Horticulture"
+4;401112;Plant protection;;;"Cultivation of Land; Horticulture"
+4;401113;Plant breeding;;;"Cultivation of Land; Horticulture"
+4;401114;Seed breeding;;;"Cultivation of Land; Horticulture"
+4;401115;Seed cultivation;;;"Cultivation of Land; Horticulture"
+4;401116;Special crops;;;"Cultivation of Land; Horticulture"
+4;401117;Viticulture;;;"Cultivation of Land; Horticulture"
+4;401118;Cultivation of ornamental plants;;;"Cultivation of Land; Horticulture"
+4;401119;Field forage growing;;;"Cultivation of Land; Horticulture"
+3;4012;Forestry and Wood Industry;;;"Agriculture and Forestry; Fishery"
+4;401201;Forest entomology;;;Forestry and Wood Industry
+4;401202;Forest pathology;;;Forestry and Wood Industry
+4;401203;Forest protection;;;Forestry and Wood Industry
+4;401204;Forest engineering;;;Forestry and Wood Industry
+4;401205;Forestry;;;Forestry and Wood Industry
+4;401206;Wood industry;;;Forestry and Wood Industry
+4;401207;Silviculture;;;Forestry and Wood Industry
+4;401208;Forest ecology;;;Forestry and Wood Industry
+4;401209;Forest growth;;;Forestry and Wood Industry
+3;4019;"Agriculture and Forestry; Fishery not elsewhere classified";;;"Agriculture and Forestry; Fishery"
+4;401901;Soil erosion;;;"Agriculture and Forestry; Fishery not elsewhere classified"
+4;401902;Soil science;;;"Agriculture and Forestry; Fishery not elsewhere classified"
+4;401903;Fishery;;;"Agriculture and Forestry; Fishery not elsewhere classified"
+4;401904;History of agriculture and forestry;;;"Agriculture and Forestry; Fishery not elsewhere classified"
+4;401905;Renewable resources;;;"Agriculture and Forestry; Fishery not elsewhere classified"
+4;401906;Game management;;;"Agriculture and Forestry; Fishery not elsewhere classified"
+2;402;"Animal Breeding; Animal Production";;;"AGRICULTURAL SCIENCES; VETERINARY MEDICINE"
+3;4020;"Animal Breeding; Animal Production";;;"Animal Breeding; Animal Production"
+4;402001;Apiology;;;"Animal Breeding; Animal Production"
+4;402002;Ichthyology;;;"Animal Breeding; Animal Production"
+4;402003;Meat hygiene;;;"Animal Breeding; Animal Production"
+4;402004;Meat production;;;"Animal Breeding; Animal Production"
+4;402005;Feed analysis;;;"Animal Breeding; Animal Production"
+4;402006;Pet breeding;;;"Animal Breeding; Animal Production"
+4;402007;Apiculture;;;"Animal Breeding; Animal Production"
+4;402008;Artificial insemination;;;"Animal Breeding; Animal Production"
+4;402009;Food testing;;;"Animal Breeding; Animal Production"
+4;402010;Milk hygiene;;;"Animal Breeding; Animal Production"
+4;402011;Milk production;;;"Animal Breeding; Animal Production"
+4;402012;Livestock ethology;;;"Animal Breeding; Animal Production"
+4;402013;Animal nutrition;;;"Animal Breeding; Animal Production"
+4;402014;Animal husbandry;;;"Animal Breeding; Animal Production"
+4;402015;Animal production;;;"Animal Breeding; Animal Production"
+4;402016;Animal welfare;;;"Animal Breeding; Animal Production"
+4;402017;Animal breeding;;;"Animal Breeding; Animal Production"
+4;402018;Laboratory animal science;;;"Animal Breeding; Animal Production"
+2;403;Veterinary Medicine;;;"AGRICULTURAL SCIENCES; VETERINARY MEDICINE"
+3;4030;Veterinary Medicine;;;Veterinary Medicine
+4;403001;Veterinary anaesthesiology;;;Veterinary Medicine
+4;403002;Veterinary anatomy;;;Veterinary Medicine
+4;403003;Veterinary andrology;;;Veterinary Medicine
+4;403004;Veterinary ophthalmology;;;Veterinary Medicine
+4;403005;Veterinary bacteriology;;;Veterinary Medicine
+4;403006;Veterinary diagnostic imaging;;;Veterinary Medicine
+4;403007;Veterinary surgery;;;Veterinary Medicine
+4;403008;Veterinary diagnostics;;;Veterinary Medicine
+4;403009;Veterinary embryology;;;Veterinary Medicine
+4;403010;Veterinary obstetrics;;;Veterinary Medicine
+4;403011;Forensic veterinary medicine;;;Veterinary Medicine
+4;403012;History of veterinary medicine;;;Veterinary Medicine
+4;403013;Veterinary gynaecology;;;Veterinary Medicine
+4;403014;Veterinary histology;;;Veterinary Medicine
+4;403015;Veterinary hygiene;;;Veterinary Medicine
+4;403016;Veterinary immunology;;;Veterinary Medicine
+4;403017;Veterinary internal medicine;;;Veterinary Medicine
+4;403018;Veterinary laboratory diagnostics;;;Veterinary Medicine
+4;403019;Veterinary medical biochemistry;;;Veterinary Medicine
+4;403020;Veterinary medical chemistry;;;Veterinary Medicine
+4;403021;Veterinary neurology;;;Veterinary Medicine
+4;403022;Veterinary orthopaedics;;;Veterinary Medicine
+4;403023;Veterinary parasitology;;;Veterinary Medicine
+4;403024;Veterinary pathology;;;Veterinary Medicine
+4;403025;Veterinary pharmacology;;;Veterinary Medicine
+4;403026;Veterinary physiology;;;Veterinary Medicine
+4;403027;Veterinary phytotherapy;;;Veterinary Medicine
+4;403028;Animal nutrition;;;Veterinary Medicine
+4;403029;Control of animal diseases;;;Veterinary Medicine
+4;403030;Veterinary toxicology;;;Veterinary Medicine
+4;403031;Veterinary virology;;;Veterinary Medicine
+4;403032;Veterinary dentistry;;;Veterinary Medicine
+4;403033;Veterinary regenerative medicine;;;Veterinary Medicine
+4;403034;Veterinary pain medicine;;;Veterinary Medicine
+4;403035;Herd health management;;;Veterinary Medicine
+4;403036;Veterinary critical care medicine;;;Veterinary Medicine
+2;404;"Agricultural Biotechnology; Food Biotechnology";;;"AGRICULTURAL SCIENCES; VETERINARY MEDICINE"
+3;4040;"Agricultural Biotechnology; Food Biotechnology";;;"Agricultural Biotechnology; Food Biotechnology"
+4;404001;Agricultural biotechnology;;;"Agricultural Biotechnology; Food Biotechnology"
+4;404002;Biopharming;;;"Agricultural Biotechnology; Food Biotechnology"
+4;404003;Agricultural and food biotechnology related ethics;;;"Agricultural Biotechnology; Food Biotechnology"
+4;404004;Fermentation;;;"Agricultural Biotechnology; Food Biotechnology"
+4;404005;Fermentation technology;;;"Agricultural Biotechnology; Food Biotechnology"
+4;404006;Genetic engineering;;;"Agricultural Biotechnology; Food Biotechnology"
+4;404007;Food biotechnology;;;"Agricultural Biotechnology; Food Biotechnology"
+2;405;Other Agricultural Sciences;;;"AGRICULTURAL SCIENCES; VETERINARY MEDICINE"
+3;4050;Other Agricultural Sciences;;;Other Agricultural Sciences
+4;405001;Agroecology;;;Other Agricultural Sciences
+4;405002;Agricultural economics;;;Other Agricultural Sciences
+4;405003;Agricultural policy;;;Other Agricultural Sciences
+4;405004;Sustainable agriculture;;;Other Agricultural Sciences
+4;405005;Wildlife science;;;Other Agricultural Sciences
+4;405006;Agricultural sociology;;;Other Agricultural Sciences
+4;405007;Wildlife management;;;Other Agricultural Sciences
+1;5;SOCIAL SCIENCES;;;
+2;501;Psychology;;;SOCIAL SCIENCES
+3;5010;Psychology;;;Psychology
+4;501001;General psychology;;;Psychology
+4;501002;Applied psychology;;;Psychology
+4;501003;Occupational psychology;;;Psychology
+4;501004;Differential psychology;;;Psychology
+4;501005;Developmental psychology;;;Psychology
+4;501006;Experimental psychology;;;Psychology
+4;501007;History of psychology;;;Psychology
+4;501008;Group dynamics;;;Psychology
+4;501009;Child and adolescent psychology;;;Psychology
+4;501010;Clinical psychology;;;Psychology
+4;501011;Cognitive psychology;;;Psychology
+4;501012;Media psychology;;;Psychology
+4;501013;Motivational psychology;;;Psychology
+4;501014;Neuropsychology;;;Psychology
+4;501015;Organisational psychology;;;Psychology
+4;501016;Educational psychology;;;Psychology
+4;501017;Psychoanalysis;;;Psychology
+4;501018;Psychological diagnostics;;;Psychology
+4;501019;Psychotherapy;;;Psychology
+4;501020;Legal psychology;;;Psychology
+4;501021;Social psychology;;;Psychology
+4;501022;Suicidology;;;Psychology
+4;501023;Depth psychology;;;Psychology
+4;501024;Behavioural therapy;;;Psychology
+4;501025;Traffic psychology;;;Psychology
+4;501026;Psychology of perception;;;Psychology
+4;501027;Music therapy;;;Psychology
+4;501028;Psychosocial support in emergencies;;;Psychology
+4;501029;Economic psychology;;;Psychology
+4;501030;Cognitive science;;;Psychology
+2;502;Economics;;;SOCIAL SCIENCES
+3;5020;Economics;;;Economics
+4;502001;Labour market policy;;;Economics
+4;502002;Labour economics;;;Economics
+4;502003;Foreign trade;;;Economics
+4;502004;Banking management;;;Economics
+4;502005;Economics of education;;;Economics
+4;502006;Controlling;;;Economics
+4;502007;E-commerce;;;Economics
+4;502008;Development economics;;;Economics
+4;502009;Corporate finance;;;Economics
+4;502010;Public finance;;;Economics
+4;502011;Cooperative systems;;;Economics
+4;502012;Industrial management;;;Economics
+4;502013;Industrial economics;;;Economics
+4;502014;Innovation research;;;Economics
+4;502015;Innovation management;;;Economics
+4;502016;SME-research;;;Economics
+4;502017;Logistics;;;Economics
+4;502018;Macroeconomics;;;Economics
+4;502019;Marketing;;;Economics
+4;502020;Market research;;;Economics
+4;502021;Microeconomics;;;Economics
+4;502022;Sustainable economics;;;Economics
+4;502023;NPO research;;;Economics
+4;502024;Public economy;;;Economics
+4;502025;Econometrics;;;Economics
+4;502026;Human resource management;;;Economics
+4;502027;Political economy;;;Economics
+4;502028;Production management;;;Economics
+4;502029;Product management;;;Economics
+4;502030;Project management;;;Economics
+4;502031;Public management;;;Economics
+4;502032;Quality management;;;Economics
+4;502033;Accounting;;;Economics
+4;502034;Regulatory economics;;;Economics
+4;502035;Auditing and trusts;;;Economics
+4;502036;Risk management;;;Economics
+4;502037;Location planning;;;Economics
+4;502038;Taxation;;;Economics
+4;502039;Structural policy;;;Economics
+4;502040;Tourism research;;;Economics
+4;502041;Environmental management;;;Economics
+4;502042;Environmental economics;;;Economics
+4;502043;Business consultancy;;;Economics
+4;502044;Business management;;;Economics
+4;502045;Behavioural economics;;;Economics
+4;502046;Economic policy;;;Economics
+4;502047;Economic theory;;;Economics
+4;502048;Business ethics;;;Economics
+4;502049;Economic history;;;Economics
+4;502050;Business informatics;;;Economics
+4;502051;Economic statistics;;;Economics
+4;502052;Business administration;;;Economics
+4;502053;Economics;;;Economics
+4;502054;Entrepreneurship;;;Economics
+4;502055;Distribution economics;;;Economics
+4;502056;Auditing;;;Economics
+4;502057;Experimental economics;;;Economics
+4;502058;Digital transformation;;;Economics
+4;502059;Circular economy;;;Economics
+2;503;Educational Sciences;;;SOCIAL SCIENCES
+3;5030;Educational Sciences;;;Educational Sciences
+4;503001;General education;;;Educational Sciences
+4;503002;Applied education;;;Educational Sciences
+4;503003;Talent research;;;Educational Sciences
+4;503004;Vocational studies;;;Educational Sciences
+4;503005;Vocational education;;;Educational Sciences
+4;503006;Educational research;;;Educational Sciences
+4;503007;Didactics;;;Educational Sciences
+4;503008;E-learning;;;Educational Sciences
+4;503009;Adult education;;;Educational Sciences
+4;503010;"Subject didactics of agricultural sciences; veterinary medicine";;;Educational Sciences
+4;503011;Subject didactics of humanities;;;Educational Sciences
+4;503012;Subject didactics of human medicine and health sciences;;;Educational Sciences
+4;503013;Subject didactics of natural sciences;;;Educational Sciences
+4;503014;Subject didactics of social sciences;;;Educational Sciences
+4;503015;Subject didactics of technical sciences;;;Educational Sciences
+4;503016;Leisure education;;;Educational Sciences
+4;503017;History of education;;;Educational Sciences
+4;503018;University didactics;;;Educational Sciences
+4;503019;Art education;;;Educational Sciences
+4;503020;Media education;;;Educational Sciences
+4;503021;Museum education;;;Educational Sciences
+4;503022;Music education;;;Educational Sciences
+4;503023;Qualification research;;;Educational Sciences
+4;503024;Religious education;;;Educational Sciences
+4;503025;School pedagogy;;;Educational Sciences
+4;503026;Orthopaedagogy;;;Educational Sciences
+4;503027;Social pedagogy;;;Educational Sciences
+4;503028;Sport pedagogy;;;Educational Sciences
+4;503029;Language teaching research;;;Educational Sciences
+4;503030;Business education;;;Educational Sciences
+4;503031;Elementary pedagogy;;;Educational Sciences
+4;503032;Teaching and learning research;;;Educational Sciences
+4;503033;Political education;;;Educational Sciences
+4;503034;Inclusive education;;;Educational Sciences
+4;503035;Sex education;;;Educational Sciences
+4;503036;Vocal research;;;Educational Sciences
+2;504;Sociology;;;SOCIAL SCIENCES
+3;5040;Sociology;;;Sociology
+4;504001;General sociology;;;Sociology
+4;504002;Sociology of work;;;Sociology
+4;504003;Poverty and social exclusion;;;Sociology
+4;504004;Population statistics;;;Sociology
+4;504005;Educational sociology;;;Sociology
+4;504006;Demography;;;Sociology
+4;504007;Empirical social research;;;Sociology
+4;504008;Ethnography;;;Sociology
+4;504009;Ethnology;;;Sociology
+4;504010;European ethnology;;;Sociology
+4;504011;Genealogy;;;Sociology
+4;504012;Leisure research;;;Sociology
+4;504013;Gender mainstreaming;;;Sociology
+4;504014;Gender studies;;;Sociology
+4;504015;History of sociology;;;Sociology
+4;504016;Sociology of youth;;;Sociology
+4;504017;Cultural anthropology;;;Sociology
+4;504018;Sociology of culture;;;Sociology
+4;504019;Media sociology;;;Sociology
+4;504020;Medical sociology;;;Sociology
+4;504021;Migration research;;;Sociology
+4;504022;Music sociology;;;Sociology
+4;504023;Political sociology;;;Sociology
+4;504024;Sociology of law;;;Sociology
+4;504025;Sociology of religion;;;Sociology
+4;504026;Social history;;;Sociology
+4;504027;Special sociology;;;Sociology
+4;504028;Sociology of technology;;;Sociology
+4;504029;Environmental sociology;;;Sociology
+4;504030;Economic sociology;;;Sociology
+4;504031;Diversity research;;;Sociology
+2;505;Law;;;SOCIAL SCIENCES
+3;5050;Law;;;Law
+4;505001;Labour law;;;Law
+4;505002;Data protection;;;Law
+4;505003;European law;;;Law
+4;505004;Financial law;;;Law
+4;505005;Intellectual property;;;Law
+4;505006;Fundamental rights;;;Law
+4;505007;Insolvency law;;;Law
+4;505008;Criminology;;;Law
+4;505009;Mediation;;;Law
+4;505010;Medical law;;;Law
+4;505011;Human rights;;;Law
+4;505012;Public law;;;Law
+4;505013;Private law;;;Law
+4;505014;Legal history;;;Law
+4;505015;Legal informatics;;;Law
+4;505016;Legal theory;;;Law
+4;505017;Comparative law;;;Law
+4;505018;Religious law;;;Law
+4;505019;Roman law;;;Law
+4;505020;Social law;;;Law
+4;505021;Constitutional law;;;Law
+4;505022;Tax law;;;Law
+4;505023;Criminal procedural law;;;Law
+4;505024;Criminal law;;;Law
+4;505025;Business law;;;Law
+4;505026;Constitutional law;;;Law
+4;505027;Administrative studies;;;Law
+4;505028;Administrative law;;;Law
+4;505029;International law;;;Law
+4;505030;Commercial law;;;Law
+4;505031;Civil law;;;Law
+4;505032;Civil procedure law;;;Law
+4;505033;Anti-discrimination law;;;Law
+4;505034;Banking and capital market law;;;Law
+4;505035;Building law;;;Law
+4;505036;Energy law;;;Law
+4;505037;Family and inheritance law;;;Law
+4;505038;Trademark and patent law;;;Law
+4;505039;Media law;;;Law
+4;505040;Sports law;;;Law
+4;505041;Environmental law;;;Law
+4;505042;Traffic law;;;Law
+4;505043;Competition and antitrust law;;;Law
+4;505044;Corporate law;;;Law
+4;505045;Higher education law;;;Law
+4;505046;Air and space law;;;Law
+4;505047;General procedural law;;;Law
+4;505048;Property law;;;Law
+4;505049;Arbitration law;;;Law
+4;505050;Animal protection law;;;Law
+4;505051;Legal ethics;;;Law
+4;505052;Insurance law;;;Law
+4;505053;Administrative procedural law;;;Law
+2;506;Political Science;;;SOCIAL SCIENCES
+3;5060;Political Science;;;Political Science
+4;506001;General theory of the state;;;Political Science
+4;506002;E-government;;;Political Science
+4;506003;Development policy;;;Political Science
+4;506004;European integration;;;Political Science
+4;506005;Research policy;;;Political Science
+4;506006;Peace studies;;;Political Science
+4;506007;International relations;;;Political Science
+4;506008;Conflict research;;;Political Science
+4;506009;Organisation theory;;;Political Science
+4;506010;Policy analysis;;;Political Science
+4;506011;Political history;;;Political Science
+4;506012;Political systems;;;Political Science
+4;506013;Political theory;;;Political Science
+4;506014;Comparative politics;;;Political Science
+4;506015;Asylum policy;;;Political Science
+4;506016;Migration policy;;;Political Science
+4;506017;Science and technology policy;;;Political Science
+4;506018;Terrorism research;;;Political Science
+2;507;"Human Geography; Regional Geography; Regional Planning";;;SOCIAL SCIENCES
+3;5070;"Human Geography; Regional Geography; Regional Planning";;;"Human Geography; Regional Geography; Regional Planning"
+4;507001;Applied geography;;;"Human Geography; Regional Geography; Regional Planning"
+4;507002;Population geography;;;"Human Geography; Regional Geography; Regional Planning"
+4;507003;Geoinformatics;;;"Human Geography; Regional Geography; Regional Planning"
+4;507004;History of geography;;;"Human Geography; Regional Geography; Regional Planning"
+4;507005;Cultural geography;;;"Human Geography; Regional Geography; Regional Planning"
+4;507006;Cultural landscape research;;;"Human Geography; Regional Geography; Regional Planning"
+4;507007;Land use planning;;;"Human Geography; Regional Geography; Regional Planning"
+4;507008;Landscape planning;;;"Human Geography; Regional Geography; Regional Planning"
+4;507009;Regional planning;;;"Human Geography; Regional Geography; Regional Planning"
+4;507010;Political geography;;;"Human Geography; Regional Geography; Regional Planning"
+4;507011;Spatial research;;;"Human Geography; Regional Geography; Regional Planning"
+4;507012;Spatial structure;;;"Human Geography; Regional Geography; Regional Planning"
+4;507013;Regional geography;;;"Human Geography; Regional Geography; Regional Planning"
+4;507014;Regional development;;;"Human Geography; Regional Geography; Regional Planning"
+4;507015;Regional research;;;"Human Geography; Regional Geography; Regional Planning"
+4;507016;Regional economy;;;"Human Geography; Regional Geography; Regional Planning"
+4;507017;Social geography;;;"Human Geography; Regional Geography; Regional Planning"
+4;507018;Urban and village renewal;;;"Human Geography; Regional Geography; Regional Planning"
+4;507019;Urban development planning;;;"Human Geography; Regional Geography; Regional Planning"
+4;507020;Urbanism;;;"Human Geography; Regional Geography; Regional Planning"
+4;507021;Urban history;;;"Human Geography; Regional Geography; Regional Planning"
+4;507022;Urban planning;;;"Human Geography; Regional Geography; Regional Planning"
+4;507023;Location development;;;"Human Geography; Regional Geography; Regional Planning"
+4;507024;Environmental policy;;;"Human Geography; Regional Geography; Regional Planning"
+4;507025;Transport planning;;;"Human Geography; Regional Geography; Regional Planning"
+4;507026;Economic geography;;;"Human Geography; Regional Geography; Regional Planning"
+4;507027;Sustainable urban development;;;"Human Geography; Regional Geography; Regional Planning"
+4;507028;Cartography;;;"Human Geography; Regional Geography; Regional Planning"
+4;507029;Urban ecology;;;"Human Geography; Regional Geography; Regional Planning"
+2;508;Media and Communication Sciences;;;SOCIAL SCIENCES
+3;5080;Media and Communication Sciences;;;Media and Communication Sciences
+4;508001;Archive studies;;;Media and Communication Sciences
+4;508002;Audiovisual media;;;Media and Communication Sciences
+4;508003;Library science;;;Media and Communication Sciences
+4;508004;Intercultural communication;;;Media and Communication Sciences
+4;508005;Journalism;;;Media and Communication Sciences
+4;508006;Communication theory;;;Media and Communication Sciences
+4;508007;Communication science;;;Media and Communication Sciences
+4;508008;Media analysis;;;Media and Communication Sciences
+4;508009;Media research;;;Media and Communication Sciences
+4;508010;Media history;;;Media and Communication Sciences
+4;508011;Media theory;;;Media and Communication Sciences
+4;508012;Media impact studies;;;Media and Communication Sciences
+4;508013;Public relations;;;Media and Communication Sciences
+4;508014;Journalism;;;Media and Communication Sciences
+4;508015;Business communication;;;Media and Communication Sciences
+4;508016;Science communication;;;Media and Communication Sciences
+4;508017;Organisational communication;;;Media and Communication Sciences
+4;508018;Reception research;;;Media and Communication Sciences
+4;508019;Media ethics;;;Media and Communication Sciences
+4;508020;Political communication;;;Media and Communication Sciences
+4;508021;Media studies;;;Media and Communication Sciences
+2;509;Other Social Sciences;;;SOCIAL SCIENCES
+3;5090;Other Social Sciences;;;Other Social Sciences
+4;509001;Action research;;;Other Social Sciences
+4;509002;Disability studies;;;Other Social Sciences
+4;509003;Development cooperation;;;Other Social Sciences
+4;509004;Evaluation research;;;Other Social Sciences
+4;509005;Gerontology;;;Other Social Sciences
+4;509006;History of social sciences;;;Other Social Sciences
+4;509007;Graffiti research;;;Other Social Sciences
+4;509008;"Child research; youth research";;;Other Social Sciences
+4;509009;Military strategic research;;;Other Social Sciences
+4;509010;Minority research;;;Other Social Sciences
+4;509011;Organisational development;;;Other Social Sciences
+4;509012;Social policy;;;Other Social Sciences
+4;509013;Social statistics;;;Other Social Sciences
+4;509014;Game research;;;Other Social Sciences
+4;509015;Accident research;;;Other Social Sciences
+4;509016;Transport economics;;;Other Social Sciences
+4;509017;Social studies of science;;;Other Social Sciences
+4;509018;Knowledge management;;;Other Social Sciences
+4;509019;Futurology;;;Other Social Sciences
+4;509020;Military ethics;;;Other Social Sciences
+4;509021;Military science;;;Other Social Sciences
+4;509022;Polemology;;;Other Social Sciences
+4;509023;Development research;;;Other Social Sciences
+4;509024;Security research;;;Other Social Sciences
+4;509025;Technology studies;;;Other Social Sciences
+4;509026;Digitalisation research;;;Other Social Sciences
+1;6;HUMANITIES;;;
+2;601;"History; Archaeology";;;HUMANITIES
+3;6010;"History; Archaeology";;;"History; Archaeology"
+4;601001;Ancient history;;;"History; Archaeology"
+4;601002;Classical studies;;;"History; Archaeology"
+4;601003;Archaeology;;;"History; Archaeology"
+4;601004;Epigraphy;;;"History; Archaeology"
+4;601005;European history;;;"History; Archaeology"
+4;601006;Early history;;;"History; Archaeology"
+4;601007;Historical regional studies;;;"History; Archaeology"
+4;601008;Science of history;;;"History; Archaeology"
+4;601009;Historical auxiliary sciences;;;"History; Archaeology"
+4;601010;Classical archaeology;;;"History; Archaeology"
+4;601011;Codicology;;;"History; Archaeology"
+4;601012;Medieval history;;;"History; Archaeology"
+4;601013;Museology;;;"History; Archaeology"
+4;601014;Modern history;;;"History; Archaeology"
+4;601015;Numismatics;;;"History; Archaeology"
+4;601016;Austrian history;;;"History; Archaeology"
+4;601017;Palaeography;;;"History; Archaeology"
+4;601018;Papyrology;;;"History; Archaeology"
+4;601019;Source studies;;;"History; Archaeology"
+4;601020;Regional history;;;"History; Archaeology"
+4;601021;Prehistory;;;"History; Archaeology"
+4;601022;Contemporary history;;;"History; Archaeology"
+4;601023;Global history;;;"History; Archaeology"
+4;601024;Archaeological prospection;;;"History; Archaeology"
+4;601025;Experimental archaeology;;;"History; Archaeology"
+4;601026;Virtual archeology;;;"History; Archaeology"
+4;601027;Deserted settlement research;;;"History; Archaeology"
+4;601028;Gender history;;;"History; Archaeology"
+4;601029;Social history;;;"History; Archaeology"
+2;602;Linguistics and Literature;;;HUMANITIES
+3;6020;Linguistics and Literature;;;Linguistics and Literature
+4;602001;African studies;;;Linguistics and Literature
+4;602002;Egyptology;;;Linguistics and Literature
+4;602003;General literature studies;;;Linguistics and Literature
+4;602004;General linguistics;;;Linguistics and Literature
+4;602005;American studies;;;Linguistics and Literature
+4;602006;Applied literature studies;;;Linguistics and Literature
+4;602007;Applied linguistics;;;Linguistics and Literature
+4;602008;English studies;;;Linguistics and Literature
+4;602009;Arabic studies;;;Linguistics and Literature
+4;602010;Byzantine studies;;;Linguistics and Literature
+4;602011;Computational linguistics;;;Linguistics and Literature
+4;602012;Finno-Ugrian studies;;;Linguistics and Literature
+4;602013;Sign language research;;;Linguistics and Literature
+4;602014;German studies;;;Linguistics and Literature
+4;602015;Greek studies;;;Linguistics and Literature
+4;602016;Hermeneutics;;;Linguistics and Literature
+4;602017;Indo-European studies;;;Linguistics and Literature
+4;602018;Indology;;;Linguistics and Literature
+4;602019;Iranian studies;;;Linguistics and Literature
+4;602020;Japanese studies;;;Linguistics and Literature
+4;602021;Yiddish studies;;;Linguistics and Literature
+4;602022;Jewish studies;;;Linguistics and Literature
+4;602023;Celtic studies;;;Linguistics and Literature
+4;602024;Classical philology;;;Linguistics and Literature
+4;602025;Clinical linguistics;;;Linguistics and Literature
+4;602026;Cognitive linguistics;;;Linguistics and Literature
+4;602027;Coptic studies;;;Linguistics and Literature
+4;602028;Korean studies;;;Linguistics and Literature
+4;602029;Latin studies;;;Linguistics and Literature
+4;602030;Lexicography;;;Linguistics and Literature
+4;602031;History of literature;;;Linguistics and Literature
+4;602032;Dialectology;;;Linguistics and Literature
+4;602033;Onomastics;;;Linguistics and Literature
+4;602034;Dutch studies;;;Linguistics and Literature
+4;602035;Modern Greek studies;;;Linguistics and Literature
+4;602036;Neurolinguistics;;;Linguistics and Literature
+4;602037;Oriental studies;;;Linguistics and Literature
+4;602038;Phonetics;;;Linguistics and Literature
+4;602039;Phonology;;;Linguistics and Literature
+4;602040;Psycholinguistics;;;Linguistics and Literature
+4;602041;Rhetoric;;;Linguistics and Literature
+4;602042;Romance studies;;;Linguistics and Literature
+4;602043;Semiotics;;;Linguistics and Literature
+4;602044;Semitic studies;;;Linguistics and Literature
+4;602045;Sinology;;;Linguistics and Literature
+4;602046;Scandinavian studies;;;Linguistics and Literature
+4;602047;Slavonic studies;;;Linguistics and Literature
+4;602048;Sociolinguistics;;;Linguistics and Literature
+4;602049;Terminology science;;;Linguistics and Literature
+4;602050;Tibetan studies;;;Linguistics and Literature
+4;602051;Translation studies;;;Linguistics and Literature
+4;602052;Turkish studies;;;Linguistics and Literature
+4;602053;Comparative literature studies;;;Linguistics and Literature
+4;602054;Comparative linguistics;;;Linguistics and Literature
+4;602055;Patholinguistics;;;Linguistics and Literature
+4;602056;Ancient Oriental studies;;;Linguistics and Literature
+4;602057;Historical linguistics;;;Linguistics and Literature
+4;602058;Corpus linguistics;;;Linguistics and Literature
+4;602059;Writing studies;;;Linguistics and Literature
+2;603;"Philosophy; Ethics; Religion";;;HUMANITIES
+3;6031;"Philosophy; Ethics";;;"Philosophy; Ethics; Religion"
+4;603101;Aesthetics;;;"Philosophy; Ethics"
+4;603102;Epistemology;;;"Philosophy; Ethics"
+4;603103;Ethics;;;"Philosophy; Ethics"
+4;603104;History of philosophy;;;"Philosophy; Ethics"
+4;603105;Philosophy of history;;;"Philosophy; Ethics"
+4;603106;Hermeneutics;;;"Philosophy; Ethics"
+4;603107;Critique of ideology;;;"Philosophy; Ethics"
+4;603108;Cultural philosophy;;;"Philosophy; Ethics"
+4;603109;Logic;;;"Philosophy; Ethics"
+4;603110;Metaphysics;;;"Philosophy; Ethics"
+4;603111;Natural philosophy;;;"Philosophy; Ethics"
+4;603112;Phenomenology;;;"Philosophy; Ethics"
+4;603113;Philosophy;;;"Philosophy; Ethics"
+4;603114;Philosophy of mind;;;"Philosophy; Ethics"
+4;603115;Philosophical anthropology;;;"Philosophy; Ethics"
+4;603116;Political philosophy;;;"Philosophy; Ethics"
+4;603117;Philosophy of law;;;"Philosophy; Ethics"
+4;603118;Philosophy of religion;;;"Philosophy; Ethics"
+4;603119;Social philosophy;;;"Philosophy; Ethics"
+4;603120;Philosophy of language;;;"Philosophy; Ethics"
+4;603121;Political philosophy;;;"Philosophy; Ethics"
+4;603122;Philosophy of technology;;;"Philosophy; Ethics"
+4;603123;History of science;;;"Philosophy; Ethics"
+4;603124;Theory of science;;;"Philosophy; Ethics"
+4;603125;Metaethics;;;"Philosophy; Ethics"
+4;603126;Intercultural philosophy;;;"Philosophy; Ethics"
+3;6032;Theology;;;"Philosophy; Ethics; Religion"
+4;603201;Old Testament studies;;;Theology
+4;603202;Christian archaeology;;;Theology
+4;603203;Christian philosophy;;;Theology
+4;603204;Christian social ethics;;;Theology
+4;603205;Dogmatic theology;;;Theology
+4;603206;Fundamental theology;;;Theology
+4;603207;Homiletics;;;Theology
+4;603208;Intercultural theology;;;Theology
+4;603209;Canon law;;;Theology
+4;603210;Catechetics;;;Theology
+4;603211;Church history;;;Theology
+4;603212;Liturgical studies;;;Theology
+4;603213;Moral theology;;;Theology
+4;603214;New Testament studies;;;Theology
+4;603215;Ecumenical theology;;;Theology
+4;603216;Pastoral psychology;;;Theology
+4;603217;Pastoral theology;;;Theology
+4;603218;Patrology;;;Theology
+4;603219;Practical theology;;;Theology
+4;603220;Pastoral care;;;Theology
+4;603221;Spiritual theology;;;Theology
+4;603222;Systematic theology;;;Theology
+4;603223;Theological anthropology;;;Theology
+3;6039;"Religion; Religious Studies not elsewhere classified";;;"Philosophy; Ethics; Religion"
+4;603901;Atheism;;;"Religion; Religious Studies not elsewhere classified"
+4;603902;Buddhism;;;"Religion; Religious Studies not elsewhere classified"
+4;603903;Exegesis;;;"Religion; Religious Studies not elsewhere classified"
+4;603904;Hinduism;;;"Religion; Religious Studies not elsewhere classified"
+4;603905;Islam;;;"Religion; Religious Studies not elsewhere classified"
+4;603906;Jewish religion;;;"Religion; Religious Studies not elsewhere classified"
+4;603907;Church law;;;"Religion; Religious Studies not elsewhere classified"
+4;603908;History of religion;;;"Religion; Religious Studies not elsewhere classified"
+4;603909;Religious studies;;;"Religion; Religious Studies not elsewhere classified"
+4;603910;Psychology of religion;;;"Religion; Religious Studies not elsewhere classified"
+2;604;Arts;;;HUMANITIES
+3;6040;Arts;;;Arts
+4;604001;Applied arts;;;Arts
+4;604002;Architectural design;;;Arts
+4;604003;Performance practice;;;Arts
+4;604004;Fine arts;;;Arts
+4;604005;Stage design;;;Arts
+4;604006;Performing arts;;;Arts
+4;604007;Historic preservation;;;Arts
+4;604008;Design;;;Arts
+4;604009;Ethnomusicology;;;Arts
+4;604010;Film design;;;Arts
+4;604011;Film studies;;;Arts
+4;604012;Photography;;;Arts
+4;604013;Garden art;;;Arts
+4;604014;Singing;;;Arts
+4;604015;Industrial design;;;Arts
+4;604016;Jazz studies;;;Arts
+4;604017;Church music;;;Arts
+4;604018;"Conservation; restoration";;;Arts
+4;604019;Art history;;;Arts
+4;604020;Art theory;;;Arts
+4;604021;Media arts;;;Arts
+4;604022;Music history;;;Arts
+4;604023;Music theory;;;Arts
+4;604024;Musicology;;;Arts
+4;604025;Popular music studies;;;Arts
+4;604026;Spatial arts;;;Arts
+4;604027;Scenography;;;Arts
+4;604028;Dance studies;;;Arts
+4;604029;Theatre studies;;;Arts
+4;604030;Folk music research;;;Arts
+4;604031;Historical technology;;;Arts
+4;604032;Instrumental studies;;;Arts
+4;604033;Composition;;;Arts
+4;604034;Music theatre;;;Arts
+4;604035;Organ research;;;Arts
+4;604036;Provenance research;;;Arts
+4;604037;Collection care;;;Arts
+4;604038;Digital arts;;;Arts
+4;604039;Computer music;;;Arts
+4;604040;Interpretation research;;;Arts
+4;604041;Fashion design;;;Arts
+2;605;Other Humanities;;;HUMANITIES
+3;6050;Other Humanities;;;Other Humanities
+4;605001;History of humanities;;;Other Humanities
+4;605002;Cultural history;;;Other Humanities
+4;605003;Cultural economics;;;Other Humanities
+4;605004;Cultural studies;;;Other Humanities
+4;605005;Audience research;;;Other Humanities
+4;605006;Cultural management;;;Other Humanities
+4;605007;Digital humanities;;;Other Humanities
+4;605008;Cultural heritage;;;Other Humanities
