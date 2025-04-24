@@ -18,9 +18,7 @@ def start_client():
 @main.route('/generate_metadata', methods=['POST'])
 def generate_metadata():
     data = request.get_json()
-    metadata = build_metadata(data)
-
-    return "ok"
+    return jsonify(build_metadata(data))
 
 
 @main.route('/get_frameworks')
