@@ -11,27 +11,6 @@ def read_conf(framework, group):
     return {line.split("=")[0]: line.split("=")[1][:-1] for line in lines}  # [:-1] removes newline "\n"
 
 
-def get_DigComp_level():
-    path = "../frameworks/educational_level/DigComp/DigComp.csv"
-
-    full_path = os.path.join(os.path.dirname(__file__) + path)
-
-    return pd.read_csv(full_path, index_col="DigComp_level")
-
-
-def get_DigComp_level_name(level: int):
-    dig_comp = get_DigComp_level()
-
-    return dig_comp[dig_comp.index == level]["name"].item()
-
-
-def get_DigComp_level_description(level: int):
-    dig_comp = get_DigComp_level()
-
-    return dig_comp[dig_comp.index == level]["explanation"].item()  # For this purpose we need a more
-    # generalized description. The detailed description of the DigComp level is aligned with a specific competence.
-
-
 def get_ed_align_framework(framework):
     path = f"../frameworks/educational_alignment/{framework}/{framework}.csv"
     full_path = os.path.join(os.path.dirname(__file__), path)
@@ -121,4 +100,3 @@ def add_data_to_leafs(tree, parent, data):
             })
         else:
             add_data_to_leafs(value, key, data)
-
