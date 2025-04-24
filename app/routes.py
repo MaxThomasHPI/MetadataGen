@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify, render_template
 from app.services.orchestrator.orchestrator import generate_ed_align_suggestion, generate_teaches_suggestion, \
     generate_keywords_suggestion, generate_educational_level_suggestion
 from app.services.metadata_builder.metadata_builder import build_metadata
-from app.services.framework_processor.ed_align_processor import gather_all_framework_data, gather_educational_level_data
+from app.services.framework_processor.framework_processor import gather_all_framework_data, gather_educational_level_data
 from app.services.templatesProcessor.templatesProcessor import gather_all_templates_data
 
 
@@ -18,21 +18,8 @@ def start_client():
 def generate_metadata():
     data = request.get_json()
     metadata = build_metadata(data)
-    print(metadata)
-
-    #with open("test_metadata_gen.json", 'w') as f:
-        #f.write(json.dumps(metadata, indent=4))
 
     return "ok"
-
-
-'''
-@main.route('/generate_metadata_fragments', methods=['POST'])
-def generate_metadata_fragments():
-    data = request.get_json()
-
-    return jsonify(start_metadata_generation(data["title"], data["description"]))
-'''
 
 
 @main.route('/get_ed_align_frameworks')
