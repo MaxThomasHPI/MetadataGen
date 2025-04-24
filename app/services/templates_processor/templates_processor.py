@@ -22,5 +22,5 @@ templates = {
 }
 
 
-def gather_all_templates_data():
+def get_all_templates():
     return templates

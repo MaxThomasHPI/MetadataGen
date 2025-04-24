@@ -4,7 +4,7 @@ from app.services.orchestrator.orchestrator import generate_ed_align_suggestion,
 from app.services.metadata_builder.metadata_builder import build_metadata
 from app.services.framework_processor.framework_processor import gather_all_framework_data, \
     gather_educational_level_data
-from app.services.templatesProcessor.templatesProcessor import gather_all_templates_data
+from app.services.templates_processor.templates_processor import get_all_templates
 
 
 main = Blueprint('main', __name__)
@@ -30,7 +30,7 @@ def get_frameworks():
 
 @main.route('/get_templates')
 def get_templates():
-    return jsonify(gather_all_templates_data())
+    return jsonify(get_all_templates())
 
 
 @main.route('/get_ed_align_suggestion', methods=['POST'])
