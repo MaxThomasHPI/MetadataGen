@@ -3,7 +3,7 @@ import pandas as pd
 
 
 def read_conf(framework, group):
-    path = os.path.join(os.path.dirname(__file__), "../data/" + group + "/" + framework + "/.conf")
+    path = os.path.join(os.path.dirname(__file__), "../frameworks/" + group + "/" + framework + "/.conf")
 
     with open(path, 'r') as f:
         lines = f.readlines()
