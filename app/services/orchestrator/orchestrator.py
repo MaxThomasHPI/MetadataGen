@@ -57,7 +57,7 @@ def generate_educational_level_suggestion(title, description, framework):
     promts = [promter.get_promt(framework)]
 
     query = create_query(title, description, promts)
-    print(query)
+
     suggestion = extract_data(start_query(query))
 
     temp = {
