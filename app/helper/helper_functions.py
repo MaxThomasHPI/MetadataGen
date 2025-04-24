@@ -34,7 +34,7 @@ def get_DigComp_level_description(level: int):
 
 def get_ed_align_framework(framework):
     path = f"../frameworks/educational_alignment/{framework}/{framework}.csv"
-    full_path = os.path.join(os.path.dirname(__file__) + path)
+    full_path = os.path.join(os.path.dirname(__file__), path)
 
     return pd.read_csv(full_path, sep=";", dtype=str)
 
@@ -48,7 +48,7 @@ def get_ed_align_framework_terms(framework):
 
 def get_teaches_framework(framework):
     path = f"../frameworks/teaches/{framework}/{framework}.csv"
-    full_path = os.path.join(os.path.dirname(__file__) + path)
+    full_path = os.path.join(os.path.dirname(__file__), path)
 
     return pd.read_csv(full_path, sep=";", dtype=str)
 
@@ -62,7 +62,7 @@ def get_teaches_framework_terms(framework):
 
 def get_educational_level_framework(framework):
     path = f"../frameworks/educational_level/{framework}/{framework}.csv"
-    full_path = os.path.join(os.path.dirname(__file__) + path)
+    full_path = os.path.join(os.path.dirname(__file__), path)
 
     return pd.read_csv(full_path, sep=";", dtype=str, index_col="Level")
 

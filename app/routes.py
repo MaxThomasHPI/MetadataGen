@@ -22,11 +22,6 @@ def generate_metadata():
 
     return "ok"
 
-"""
-@main.route('/get_ed_align_frameworks')
-def get_ed_align_frameworks():
-    return jsonify(gather_all_framework_data("educational_alignment"))
-"""
 
 @main.route('/get_frameworks')
 def get_frameworks():
@@ -61,4 +56,5 @@ def get_keywords_suggestion():
 @main.route('/get_educational_level_suggestion', methods=['POST'])
 def get_educational_level_suggestion():
     data = request.get_json()
-    return jsonify(generate_educational_level_suggestion(data["name"], data["description"], data["educationalFramework"]))
+    return jsonify(generate_educational_level_suggestion(data["name"], data["description"],
+                                                         data["educationalFramework"]))
