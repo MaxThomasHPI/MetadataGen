@@ -1,11 +1,8 @@
 FROM ubuntu:22.04
 FROM python:3.10
-RUN apt-get update && apt-get upgrade -y \
-    && apt-get install curl -y \
-    && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
-    && python3 get-pip.py \
+RUN apt-get update && apt-get upgrade -y
 
-RUN apt-get install -y nginx
+RUN apt-get install nginx -y
 COPY ./nginx.conf etc/nginx/nginx.conf
 
 RUN nginx -t
