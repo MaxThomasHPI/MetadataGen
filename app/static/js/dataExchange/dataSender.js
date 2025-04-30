@@ -19,6 +19,17 @@ export async function submitData() {
                 if(!response.ok){
                     throw new Error('Sending raw data error');
                 }
+                return response.blob();
+            })
+            .then(response => {
+                const url = window.URL.createObjectURL(response);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'metadata.json';
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                window.URL.revokeObjectURL(url);
             })
             .catch(error => {
                 console.error(error);

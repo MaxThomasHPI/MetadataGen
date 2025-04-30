@@ -1,4 +1,6 @@
-from flask import Blueprint, request, jsonify, render_template
+import io
+import json
+from flask import Blueprint, request, jsonify, render_template, send_file
 from app.services.orchestrator.orchestrator import generate_ed_align_suggestion, generate_teaches_suggestion, \
     generate_keywords_suggestion, generate_educational_level_suggestion
 from app.services.metadata_builder.metadata_builder import build_metadata
@@ -18,7 +20,15 @@ def start_client():
 @main.route('/generate_metadata', methods=['POST'])
 def generate_metadata():
     data = request.get_json()
-    return jsonify(build_metadata(data))
+
+    data = json.dumps(build_metadata(data), indent=4)
+
+    file_object = io.BytesIO(data.encode('utf-8'))
+    file_object.seek(0)
+
+    return send_file(file_object, download_name='metadata.json',
+                     mimetype='application/json',
+                     as_attachment=True)
 
 
 @main.route('/get_frameworks')
