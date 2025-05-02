@@ -2,7 +2,7 @@ import io
 import json
 from flask import Blueprint, request, jsonify, render_template, send_file
 from app.services.orchestrator.orchestrator import generate_ed_align_suggestion, generate_teaches_suggestion, \
-    generate_keywords_suggestion, generate_educational_level_suggestion
+    generate_keywords_suggestion, generate_educational_level_suggestion, generate_specified_suggestions
 from app.services.metadata_builder.metadata_builder import build_metadata
 from app.services.framework_processor.framework_processor import gather_all_framework_data, \
     gather_educational_level_data
@@ -66,3 +66,11 @@ def get_educational_level_suggestion():
     data = request.get_json()
     return jsonify(generate_educational_level_suggestion(data["name"], data["description"],
                                                          data["educationalFramework"]))
+
+
+@main.route('/get_specified_suggestions', methods=['POST'])
+def get_specified_suggestions():
+    data = request.get_json()
+
+    metadata = generate_specified_suggestions(data["title"], data["description"], data["services"])
+    return jsonify(metadata)

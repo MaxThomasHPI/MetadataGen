@@ -8,8 +8,11 @@ PROMT = 'Please check the provided title and description. Select the correspondi
             '"Description" column for a more detailed description of what a competency entails. Determine a ' \
             'difficulty level for each competency according to the level system as provided in the "level_framework" ' \
             'DataFrame. Please return the results only in the following format: teaches = <the four selected ' \
-            'competencies in the style of a Python dictionary with the competency short code as provided in the ' \
-            'competency DataFrame the key and the competency level as the value (integer)>.\n'
+            'competencies in the style of a Python dictionary with the competency name as provided in the ' \
+            'competency DataFrame in the column "Name" the key and the competency level as the value (integer)>.' \
+            '\nEXAMPLE OUTPUT YOU WILL RETURN:\n' \
+            'teaches = {<Name>: <level>, <Name>: <level>, <Name>: <level>, <Name>: <level>}\n' \
+            '\nYou will NOT return a code, just your choices in the given format.\n'
 
 
 def get_promt(framework):

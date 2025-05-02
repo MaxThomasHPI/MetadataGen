@@ -66,3 +66,54 @@ def generate_educational_level_suggestion(title, description, framework):
     }
 
     return {"educationalLevel": build_educational_level(temp)}
+
+
+def generate_specified_suggestions(title: str, description: str, services: dict):
+    metadata_fragments = dict()
+    promts = list()
+
+    for key, value in services.items():
+        promter = select_single_promter(key)
+        if value:
+            promts.append(promter.get_promt(value))
+        else:
+            promts.append(promter.get_promt())
+
+    query = create_query(title, description, promts)
+
+    suggestion = extract_data(start_query(query))
+
+    for key, value in suggestion.items():
+        if key == "educationalAlignment":
+            framework = services["ed_align"]
+            temp = [{
+                "name": value,
+                "educationalFramework": framework
+            }]
+            metadata_fragments[key] = build_all_educational_alignments(temp)
+        elif key == "keywords":
+            metadata_fragments[key] = value
+        elif key == "teaches":
+            framework = services["teaches"]
+            all_suggestions = list()
+
+            for competency in value.keys():
+                temp = {
+                    "educationalFramework": framework,
+                    "name": competency
+                }
+                all_suggestions.append(temp)
+
+            metadata_fragments[key] = build_all_teaches(all_suggestions)
+        elif key == "educationalLevel":
+            framework = services["educational_level"]
+            temp = {
+                "name": value,
+                "educationalFramework": framework
+            }
+
+            metadata_fragments[key] = build_educational_level(temp)
+        else:
+            continue
+
+    return metadata_fragments
