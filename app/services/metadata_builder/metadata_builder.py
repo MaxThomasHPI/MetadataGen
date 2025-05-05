@@ -1,4 +1,4 @@
-from app.helper.helper_functions import read_conf
+from app.helper.helper_functions import read_conf, get_ed_align_additional_data
 
 
 def build_metadata(data):
@@ -64,17 +64,29 @@ def build_all_persons_fragments(persons: list):
 
 
 def build_educational_alignment_fragment(educational_alignment_data: dict):
-    conf = read_conf(educational_alignment_data["educationalFramework"], "educational_alignment")
+    framework = educational_alignment_data["educationalFramework"]
 
-    educational_alignment_data["type"] = conf["ALIGNMENT_TYPE"]
+    conf = read_conf(framework, "educational_alignment")
+
+    educational_alignment_data["alignmentType"] = "educationalSubject"
+    educational_alignment_data["type"] = "EducationalAlignment"
+
     educational_alignment_data["educationalFrameworkVersion"] = conf["VERSION"]
+    educational_alignment_data["url"] = conf["URL"]
+
+    temp_name = educational_alignment_data["name"]
 
     name = [{
-        "name": educational_alignment_data["name"],
+        "name": temp_name,
         "inLanguage": conf["LANGUAGE"]
     }]
 
     educational_alignment_data["name"] = name
+
+    add_data = get_ed_align_additional_data(framework, temp_name)
+
+    for attribute, value in add_data.items():
+        educational_alignment_data[attribute] = value
 
     return educational_alignment_data
 

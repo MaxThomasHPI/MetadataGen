@@ -25,6 +25,16 @@ def get_ed_align_framework_terms(framework):
     return str(list(set(terms[terms["ShortCode"].str.len() == max_level]["Name"])))
 
 
+def get_ed_align_additional_data(framework, name):
+    data = get_ed_align_framework(framework)
+    data = data[data["Name"] == name]
+    index = max(data.index)
+
+    data = data[data.index == index]
+
+    return {"targetUrl": data["Uri"].item(), "shortCode": data["ShortCode"].item()}
+
+
 def get_teaches_framework(framework):
     path = f"../frameworks/teaches/{framework}/{framework}.csv"
     full_path = os.path.join(os.path.dirname(__file__), path)
