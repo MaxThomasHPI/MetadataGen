@@ -111,6 +111,7 @@ def build_teaches_fragment(teaches_data: dict):
     }]
 
     teaches_data["name"] = name
+    teaches_data["url"] = conf["URL"]
 
     return teaches_data
 
