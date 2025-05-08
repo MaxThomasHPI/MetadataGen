@@ -23,6 +23,7 @@ export function loadTeachesData(inputData) {
         frameworkSelector.value = framework;
         frameworkSelector.onchange();
         selectedLabel.textContent = name;
+        selectedLabel.setAttribute('conceptUrl', data['conceptUrl']);
 
     }
 }

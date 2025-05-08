@@ -19,10 +19,15 @@ export function collectTeachesData(data) {
             }
 
             const framework = selected.split("@")[1];
+            let uri = input.getAttribute('conceptUrl');
 
             dataFragment = {
                 "name": name,
                 "educationalFramework": framework
+            }
+
+            if(uri){
+                dataFragment["conceptUrl"] = uri;
             }
         }
         if(!isEmpty(dataFragment)){

@@ -32,6 +32,7 @@ function buildSuggestionButton(container) {  // add this at the top: 4 suggestio
 
     const btn = document.createElement('button');
     btn.textContent = "Get Suggestion";
+    btn.id = 'suggest-teaches-btn';
 
     btn.onclick = async function () {
         const framework = document.getElementById('teaches-select-0').value;

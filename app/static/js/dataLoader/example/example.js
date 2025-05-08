@@ -75,6 +75,18 @@ const example1 = {
             ],
             "educationalFramework": "DigComp",
             "educationalFrameworkVersion": "2.2"
+        },
+        {
+            "name": [
+                {
+                    "name": "providing health care or medical treatments",
+                    "inLanguage": "en"
+                }
+            ],
+            "educationalFramework": "ESCO",
+            "conceptUrl": "http://data.europa.eu/esco/skill/0a400212-8693-4b1f-b0ca-d1f82c321916",
+            "educationalFrameworkVersion": "2.2",
+            "url": "https://esco.ec.europa.eu/en/classification/skill_main#overlayspin"
         }
     ],
     "keywords": [
