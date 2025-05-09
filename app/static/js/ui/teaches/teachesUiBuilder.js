@@ -4,6 +4,7 @@ import {buildAddAndDeleteButton} from "../helper/helper.js";
 import {collectGeneralData} from "../../dataCollect/general/generalDataCollector.js";
 import {askForTeachesSuggestion} from "../../dataExchange/aiInteraction/teachesAiInteracter.js";
 import {loadTeachesData} from "../../dataLoader/teaches/teachesDataLoader.js";
+import {askForESCOSuggestion} from "../../dataExchange/escoInteraction/escoInteraction.js";
 
 
 export function buildTeachesUi(number) {
@@ -37,7 +38,15 @@ function buildSuggestionButton(container) {  // add this at the top: 4 suggestio
     btn.onclick = async function () {
         const framework = document.getElementById('teaches-select-0').value;
         const generalData = collectGeneralData({});
-        const suggestion = await askForTeachesSuggestion(generalData["name"], generalData["description"], framework);
+
+        let suggestion;
+
+        if(framework === "ESCO"){
+            suggestion = await askForESCOSuggestion(generalData["name"], generalData["description"]);
+        }else{
+            suggestion = await askForTeachesSuggestion(generalData["name"], generalData["description"], framework);
+        }
+
 
         loadTeachesData({
             "teaches": suggestion

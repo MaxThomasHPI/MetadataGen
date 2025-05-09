@@ -2,7 +2,8 @@ import io
 import json
 from flask import Blueprint, request, jsonify, render_template, send_file
 from app.services.orchestrator.orchestrator import generate_ed_align_suggestion, generate_teaches_suggestion, \
-    generate_keywords_suggestion, generate_educational_level_suggestion, generate_specified_suggestions
+    generate_keywords_suggestion, generate_educational_level_suggestion, generate_specified_suggestions, \
+    generate_esco_suggestion
 from app.services.metadata_builder.metadata_builder import build_metadata
 from app.services.framework_processor.framework_processor import gather_all_framework_data, \
     gather_educational_level_data
@@ -93,3 +94,10 @@ def get_esco_fragment():
         return {}
     """
     return get_narrower_data(uri)
+
+
+@main.route('/get_esco_suggestions', methods=['POST'])
+def get_esco_suggestions():
+    data = request.get_json()
+
+    return generate_esco_suggestion(data["name"], data["description"])

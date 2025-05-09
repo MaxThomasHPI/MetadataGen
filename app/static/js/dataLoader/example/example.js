@@ -108,7 +108,7 @@ const example1 = {
 }
 
 const example2 = {
-    "name": "Sustainability in the Digital Age: Efficient AI Techniques in the LLM Era ",
+    "name": "Sustainability in the Digital Age: Efficient AI Techniques in the LLM Era",
     "learningResourceType": {
         "identifier": "https://w3id.org/kim/hcrt/course",
         "type": "Concept",

@@ -4,6 +4,7 @@ from app.services.LLM_API_connector.gemini_connector import start_query
 from app.services.metadata_builder.metadata_builder import build_all_educational_alignments, build_all_teaches, \
     build_educational_level
 from app.services.response_processor.data_extractor import extract_data
+from app.services.ESCO_suggestion_engine.ESCO_suggestion_engine import find_skills
 
 
 def generate_ed_align_suggestion(title, description, framework):
@@ -117,3 +118,19 @@ def generate_specified_suggestions(title: str, description: str, services: dict)
             continue
 
     return metadata_fragments
+
+
+def generate_esco_suggestion(title, description):
+    query = f"{title}. {description}"
+
+    skills = find_skills(query)
+
+    metadata_fragments = list()
+    for skill in skills:
+        metadata_fragments.append({
+            "name": skill["title"],
+            "conceptUrl": skill["uri"],
+            "educationalFramework": "ESCO"
+        })
+
+    return build_all_teaches(metadata_fragments)

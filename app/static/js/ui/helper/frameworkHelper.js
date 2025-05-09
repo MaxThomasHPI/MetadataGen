@@ -19,13 +19,7 @@ export function buildFrameworkSelect(frameworks, container, purpose, number) {
     let selectedFramework = frameworks[frameworkName];
     const accordionContainer = document.createElement('div');
 
-    //if(frameworkName === "ESCO"){
-        //buildESCOTree(accordionContainer, selectedFramework, 0, purpose, number);
-        //document.getElementById('suggest-teaches-btn').disabled = true;
-    //}else{
-        buildTree(accordionContainer, selectedFramework, 0, purpose, number);
-        //document.getElementById('suggest-teaches-btn').disabled = false;
-    //}
+    buildTree(accordionContainer, selectedFramework, 0, purpose, number);
 
     frameworkSelect.onchange = function () {
         for (const c of accordionContainer.children) {
@@ -35,10 +29,8 @@ export function buildFrameworkSelect(frameworks, container, purpose, number) {
         selectedFramework = frameworks[frameworkName];
         if(frameworkName === "ESCO"){
             buildESCOTree(accordionContainer, selectedFramework, 0, purpose, number);
-            document.getElementById('suggest-teaches-btn').disabled = true;  // No suggestions possible at the moment.
         }else{
             buildTree(accordionContainer, selectedFramework, 0, purpose, number);
-            document.getElementById('suggest-teaches-btn').disabled = false;
         }
     }
 
@@ -159,18 +151,6 @@ function buildESCOTree(container, entries, level, purpose, number) {
                 }
             }
 
-            /*
-            const selectBtn = document.createElement('button');
-            selectBtn.textContent = 'Select';
-            selectBtn.setAttribute('style', "float:right;");
-            selectBtn.onclick = function () {
-                const selected = document.getElementById(`selected-${purpose}-${number}`);
-                const framework = document.getElementById(`${purpose}-select-${number}`).value;
-
-                selected.textContent = `${entry}@${framework}`;
-            }
-
-            */
             const selectBtn = buildSelectButton(purpose, number, entry, entries[entry]['uri']);
 
             collapse.appendChild(body);
@@ -190,16 +170,6 @@ function buildESCOTree(container, entries, level, purpose, number) {
                 selectBtn.style.display = 'block';
             });
         } else {
-            /*
-            const btn = document.createElement('button');
-            btn.textContent = 'Select';
-            btn.onclick = function () {
-                const selected = document.getElementById(`selected-${purpose}-${number}`);
-                const framework = document.getElementById(`${purpose}-select-${number}`).value;
-
-                selected.textContent = `${entry}@${framework}`;
-            }
-            */
 
             const btn = buildSelectButton(purpose, number, entry, entries[entry]['uri']);
 

@@ -3,7 +3,7 @@ import {buildTeachesUi} from "../../ui/teaches/teachesUiBuilder.js";
 export function loadTeachesData(inputData) {
     const container = document.getElementById('teaches-container');
 
-    for (const box of container.getElementsByClassName('teaches-box')){
+    for (let box of container.querySelectorAll('.teaches-box')){
         box.remove();
     }
 
