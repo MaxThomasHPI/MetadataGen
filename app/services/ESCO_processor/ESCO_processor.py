@@ -19,7 +19,6 @@ def find_all_narrower(node):
 
 def get_initial_data():
     node_data = get_narrower_data(root_url)
-
     return node_data
 
 
