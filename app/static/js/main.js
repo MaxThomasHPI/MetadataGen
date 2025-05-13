@@ -3,6 +3,7 @@ import {storeData} from "./storage/storageHandler.js";
 import {buildUI} from "./ui/uiBuilder.js";
 import {getExample} from "./dataLoader/example/example.js";
 import {loadData} from "./dataLoader/dataLoader.js";
+import {catchUpload} from "./dataLoader/uploadCatcher.js";
 
 
 async function setup() {
@@ -12,8 +13,9 @@ async function setup() {
     storeData(templateData, frameworkData);
     buildUI();
 
-    const example = getExample(2);
+    const example = getExample(1);
     loadData(example);
+    await catchUpload();
 
 }
 

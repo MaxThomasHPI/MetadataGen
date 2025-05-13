@@ -6,9 +6,16 @@ import {loadEducationalAlignmentData} from "./educationalAlignment/educationalAl
 import {loadTeachesData} from "./teaches/teachesDataLoader.js";
 import {loadKeywordsData} from "./keywords/keywordsDataLoader.js";
 import {loadEducationalLevelData} from "./educationalLevel/educationalLevelDataLoader.js";
+import {buildUI} from "../ui/uiBuilder.js";
 
 
-export function loadData(inputData) {
+export async function loadData(inputData) {
+
+    while(document.getElementById('main_window').children.length){
+        document.getElementById('main_window').children[0].remove();
+    }
+
+    buildUI();
 
     loadGeneralData(inputData);
 
