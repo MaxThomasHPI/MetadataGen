@@ -1,6 +1,6 @@
 import io
 import json
-from flask import Blueprint, request, jsonify, render_template, send_file
+from flask import Blueprint, request, jsonify, render_template, send_file, Response
 from app.services.orchestrator.orchestrator import generate_ed_align_suggestion, generate_teaches_suggestion, \
     generate_keywords_suggestion, generate_educational_level_suggestion, generate_specified_suggestions, \
     generate_esco_suggestion
@@ -10,6 +10,8 @@ from app.services.framework_processor.framework_processor import gather_all_fram
 from app.services.templates_processor.templates_processor import get_all_templates
 #from app.services.ESCO_processor.ESCO_processor_dummy import *  # temporary kept for testing
 from app.services.ESCO_processor.ESCO_processor import get_narrower_data
+from app.services.openHPI.course_processor import find_dataset
+from app.services.openHPI.openhpi_metadata_builder import build_openhpi_metadata_fragments
 
 
 main = Blueprint('main', __name__)
@@ -101,3 +103,31 @@ def get_esco_suggestions():
     data = request.get_json()
 
     return generate_esco_suggestion(data["name"], data["description"])
+
+
+@main.route('/openhpi')
+def renderOpenHPI():
+    return render_template("openhpi.html")
+
+
+@main.route('/get_course_by_short_code')
+def get_course_by_short_code():
+    data = find_dataset(request.args.get("shortCode"))
+
+    if data:
+        return data
+    return {}
+
+
+@main.route('/generate_openhpi_metadata_fragments', methods=['POST'])
+def generate_openhpi_metadata_fragments():
+    raw_data = request.get_json()
+
+    buffer = build_openhpi_metadata_fragments(raw_data)
+
+    if buffer:
+        response = send_file(buffer, mimetype="application/zip")
+        response.headers['Content-Disposition'] = 'attachment; filename=download.zip'
+
+        return response
+    return Response(status=204)
