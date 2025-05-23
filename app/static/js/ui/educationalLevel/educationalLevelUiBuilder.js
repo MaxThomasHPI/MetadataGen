@@ -4,14 +4,12 @@ import {askForEducationalLevelSuggestion} from "../../dataExchange/aiInteraction
 import {getFrameworks} from "../../storage/storageHandler.js";
 import {loadEducationalLevelData} from "../../dataLoader/educationalLevel/educationalLevelDataLoader.js";
 
-
 export function buildEducationalLevelUi() {
     const container = document.getElementById('educationalLevel-container');
     const frameworks = getFrameworks()["educationalLevel"];
 
     buildFrameworkSelect(frameworks, container);
     buildDifficultySelect(container, frameworks);
-
 }
 
 

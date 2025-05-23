@@ -8,6 +8,5 @@ export function collectEducationalLevel(data) {
             "educationalFramework": selectedFramework
         }
     }
-
     return data;
 }

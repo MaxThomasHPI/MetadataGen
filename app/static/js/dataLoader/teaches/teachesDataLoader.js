@@ -24,6 +24,5 @@ export function loadTeachesData(inputData) {
         frameworkSelector.onchange();
         selectedLabel.textContent = name;
         selectedLabel.setAttribute('conceptUrl', data['conceptUrl']);
-
     }
 }

@@ -21,7 +21,6 @@ export function loadAllCreatorData(inputData) {
             const key = attribute["id"];
             data[key] = inputData[i][key];
         }
-
         for (const key of Object.keys(data)){
             const input = subContainer.querySelector("#" + key);
             let value = data[key];
@@ -29,7 +28,6 @@ export function loadAllCreatorData(inputData) {
             if(!value){
                 value = "";
             }
-
             if(Array.isArray(value)){
                 input.value = value[0];
             } else {

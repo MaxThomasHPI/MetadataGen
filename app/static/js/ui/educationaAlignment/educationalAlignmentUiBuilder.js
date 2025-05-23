@@ -3,14 +3,12 @@ import {buildFrameworkSelect} from "../helper/frameworkHelper.js";
 import {askForEducationalAlignmentSuggestion} from "../../dataExchange/aiInteraction/educationalAlignmentAiInteracter.js";
 import {collectGeneralData} from "../../dataCollect/general/generalDataCollector.js";
 
-
 export function buildEducationalAlignmentUi(){
     const container = document.getElementById("edAlign-container");
     const edAlignFrameworks = getFrameworks()["educationalAlignment"];
 
     buildFrameworkSelect(edAlignFrameworks, container, "educationalAlignment", 0);
     buildSuggestionButton(container);
-
 }
 
 

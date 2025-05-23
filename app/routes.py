@@ -8,7 +8,6 @@ from app.services.metadata_builder.metadata_builder import build_metadata
 from app.services.framework_processor.framework_processor import gather_all_framework_data, \
     gather_educational_level_data
 from app.services.templates_processor.templates_processor import get_all_templates
-#from app.services.ESCO_processor.ESCO_processor_dummy import *  # temporary kept for testing
 from app.services.ESCO_processor.ESCO_processor import get_narrower_data
 from app.services.openHPI.course_processor import find_dataset
 from app.services.openHPI.openhpi_metadata_builder import build_openhpi_metadata_fragments
@@ -85,16 +84,6 @@ def get_specified_suggestions():
 def get_esco_fragment():
     uri = request.get_json()["uri"]
 
-    # for testing the following part is temporary kept
-    """
-    print(uri)
-    if uri == "http://data.europa.eu/esco/skill/c73521be-c039-4e22-b037-3b01b3f6f9d9":
-        return dummy_level_2
-    elif uri == 'http://data.europa.eu/esco/skill/7a163630-7536-4748-a259-aa820d3be44b':
-        return dummy_level_3
-    else:
-        return {}
-    """
     return get_narrower_data(uri)
 
 

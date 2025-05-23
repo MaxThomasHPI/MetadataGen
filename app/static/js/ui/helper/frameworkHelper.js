@@ -88,7 +88,6 @@ function buildTree(container, entries, level, purpose, number) {
             item.appendChild(collapse);
 
             subContainer.appendChild(item);
-
         } else {
             const btn = document.createElement('button');
             btn.textContent = 'Select';
@@ -105,6 +104,7 @@ function buildTree(container, entries, level, purpose, number) {
     }
     container.appendChild(subContainer);
 }
+
 
 function buildESCOTree(container, entries, level, purpose, number) {
     const subContainer = document.createElement('div');
@@ -170,7 +170,6 @@ function buildESCOTree(container, entries, level, purpose, number) {
                 selectBtn.style.display = 'block';
             });
         } else {
-
             const btn = buildSelectButton(purpose, number, entry, entries[entry]['uri']);
 
             const row = buildRow(btn, entry, false);

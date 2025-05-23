@@ -1,9 +1,7 @@
 import {buildRow} from "../../../ui/helper/helper.js";
-//import {collectGeneralData} from "../../dataCollect/general/generalDataCollector.js";
 import {askForEducationalLevelSuggestion} from "../../../dataExchange/aiInteraction/educationalLevelAiInteractor.js";
 import {getFrameworks} from "../../../storage/storageHandler.js";
 import {loadEducationalLevelData} from "../../../dataLoader/educationalLevel/educationalLevelDataLoader.js";
-
 
 export function buildEducationalLevelUi(data) {
     const container = document.getElementById('educationalLevel-container');
@@ -11,7 +9,6 @@ export function buildEducationalLevelUi(data) {
 
     buildFrameworkSelect(frameworks, container, data);
     buildDifficultySelect(container, frameworks);
-
 }
 
 
@@ -70,7 +67,6 @@ function buildSuggestionButton(container, selector, data) {
 
     btn.onclick = async function () {
         const framework = selector.value;
-        //const generalData = collectGeneralData({});
 
         const suggestion = await askForEducationalLevelSuggestion(data["name"], data["description"], framework);
 

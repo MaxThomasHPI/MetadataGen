@@ -25,7 +25,6 @@ export function collectTeachesData(data) {
                 "name": name,
                 "educationalFramework": framework
             }
-
             if(uri){
                 dataFragment["conceptUrl"] = uri;
             }
@@ -34,10 +33,8 @@ export function collectTeachesData(data) {
             dataFragments.push(dataFragment);
         }
     }
-
     if(!isEmpty(dataFragments)){
         data["teaches"] = dataFragments;
     }
-
     return data;
 }

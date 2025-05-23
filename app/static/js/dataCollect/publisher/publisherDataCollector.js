@@ -12,10 +12,8 @@ export function collectPublisherData(data) {
             publisherData[input.children[0].id] = value;
         }
     }
-
     if(!isEmpty(publisherData)){
         data["publisher"] = publisherData;
     }
-
     return data;
 }

@@ -5,7 +5,6 @@ import {getExample} from "./dataLoader/example/example.js";
 import {loadData} from "./dataLoader/dataLoader.js";
 import {catchUpload} from "./dataLoader/uploadCatcher.js";
 
-
 async function setup() {
     const templateData = await getTemplates();
     const frameworkData = await getFrameworks();
@@ -16,7 +15,6 @@ async function setup() {
     const example = getExample(1);
     loadData(example);
     await catchUpload();
-
 }
 
 setup();

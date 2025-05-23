@@ -8,6 +8,5 @@ export function collectLicenseData(data) {
         "identifier": dropdown.options[dropdown.selectedIndex].text,
         "url": dropdown.value
     };
-
     return data;
 }

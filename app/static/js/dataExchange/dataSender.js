@@ -33,6 +33,6 @@ export async function submitData() {
             })
             .catch(error => {
                 console.error(error);
-            })
+            });
     }
 }

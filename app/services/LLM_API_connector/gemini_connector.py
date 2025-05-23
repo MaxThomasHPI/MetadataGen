@@ -10,5 +10,3 @@ def start_query(query):
     text = response.text
 
     return text
-
-

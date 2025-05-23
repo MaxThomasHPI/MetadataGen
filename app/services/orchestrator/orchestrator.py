@@ -109,39 +109,17 @@ def generate_specified_suggestions(title: str, description: str, services: dict)
     for key, value in suggestion.items():
         if key == "educationalAlignment":
             framework = services["ed_align"]
-            #temp = [{
-            #    "name": value,
-            #    "educationalFramework": framework
-            #}]
-            #metadata_fragments[key] = build_all_educational_alignments(temp)
             metadata_fragments[key] = generate_ed_align_suggestion(title, description,
                                                                    framework, suggestion)
         elif key == "keywords":
-            #metadata_fragments[key] = value
             metadata_fragments[key] = generate_keywords_suggestion(title, description,
                                                                    suggestion)
         elif key == "teaches":
             framework = services["teaches"]
-            #all_suggestions = list()
-
-            #for competency in value.keys():
-            #    temp = {
-            #        "educationalFramework": framework,
-            #        "name": competency
-            #    }
-            #    all_suggestions.append(temp)
-
-            #metadata_fragments[key] = build_all_teaches(all_suggestions)
             metadata_fragments[key] = generate_teaches_suggestion(title, description,
                                                                   framework, suggestion)
         elif key == "educationalLevel":
             framework = services["educational_level"]
-            #temp = {
-            #    "name": value,
-            #    "educationalFramework": framework
-            #}
-
-            #metadata_fragments[key] = build_educational_level(temp)
             metadata_fragments[key] = generate_educational_level_suggestion(title,
                                                                             description,
                                                                             framework,

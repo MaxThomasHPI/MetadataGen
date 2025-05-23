@@ -17,15 +17,12 @@ export function collectCreatorData(data){
                 dataFragment[input.children[0].id] = value;
             }
         }
-
         if(!isEmpty(dataFragment)){
             dataFragments.push(dataFragment);
         }
     }
-
     if(!isEmpty(dataFragments)){
         data["creator"] = dataFragments;
     }
-
     return data;
 }

@@ -6,10 +6,8 @@ import {buildEducationalAlignmentUi} from "./educationaAlignment/educationalAlig
 import {buildTeachesUi} from "./teaches/teachesUiBuilder.js";
 import {buildKeywordsUi} from "./keywords/keywordsUiBuilder.js";
 import {buildEducationalLevelUi} from "./educationalLevel/educationalLevelUiBuilder.js";
-
 import {submitData} from "../dataExchange/dataSender.js";
 import {isInputDataValid} from "../dataCheck/dataChecker.js";
-
 
 const headlineAssignment = {
     "general-container": "General Information",
@@ -21,6 +19,7 @@ const headlineAssignment = {
     "keywords-container": "Keywords",
     "educationalLevel-container": "educational Level"
 };
+
 
 export function buildUI() {
     const container = document.getElementById('main_window');
@@ -37,6 +36,7 @@ export function buildUI() {
 
     buildSubmitButton(container);
 }
+
 
 function buildUIContainer(container) {
     for (const key in headlineAssignment){
@@ -65,12 +65,10 @@ function buildSubmitButton(container){
 
             if(submitted){
                 console.log("Metadata submitted");
-
             }
         } else {
             alert("Invalid input data! Please check!");
         }
-
     }
 
     row.appendChild(submitButton);

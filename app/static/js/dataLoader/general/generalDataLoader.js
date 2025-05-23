@@ -10,7 +10,6 @@ export function loadGeneralData(inputData) {
         const key = attribute["id"];
         data[key] = inputData[key];
     }
-
     for (const key of Object.keys(data)){
         const input = container.querySelector("#" + key);
         let value = inputData[key];
@@ -18,12 +17,10 @@ export function loadGeneralData(inputData) {
         if(!value){
             value = "";
         }
-
         if(Array.isArray(value)){
             input.value = value[0];
         } else {
             input.value = value;
         }
     }
-
 }

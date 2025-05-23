@@ -14,7 +14,7 @@ export async function catchUpload() {
         };
 
         const loaded = await readFile(file);
-        //console.log(loaded);
+
         loadData(JSON.parse(loaded));
     }
 }

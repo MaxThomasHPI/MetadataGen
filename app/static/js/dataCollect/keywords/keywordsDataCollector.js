@@ -13,12 +13,9 @@ export function collectKeywordsData(data) {
         if(!(keyword === '')){
             dataFragments.push(keyword);
         }
-
     }
-
     if(!isEmpty(dataFragments)){
         data["keywords"] = dataFragments;
     }
-
     return data;
 }

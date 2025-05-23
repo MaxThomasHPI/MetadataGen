@@ -5,9 +5,7 @@ import {askForTeachesSuggestion} from "../../../dataExchange/aiInteraction/teach
 import {loadTeachesData} from "../../dataLoader/teaches/teachesDataLoader.js";
 import {askForESCOSuggestion} from "../../../dataExchange/escoInteraction/escoInteraction.js";
 
-
 export function buildTeachesUi(data, number) {
-
     if(!number){
         number = 0;
     }

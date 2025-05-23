@@ -21,6 +21,5 @@ export async function askForESCOSuggestion(name, description) {
         })
         .catch(error => {
             console.log(error);
-        })
-
+        });
 }

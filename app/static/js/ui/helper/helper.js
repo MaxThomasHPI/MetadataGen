@@ -24,7 +24,6 @@ export function buildInput(type, input_id) {
             input.appendChild(option);
         });
     }
-
     if(input){
         input.id = input_id;
     }
@@ -56,7 +55,6 @@ export function buildRow(input, labelText, mandatory) {
 
     const optionalCol = document.createElement('div');
     optionalCol.className = 'col-2 optional-col';
-
 
     row.appendChild(titleCol);
     row.appendChild(inputCol);
@@ -92,5 +90,3 @@ export function buildAddAndDeleteButton(container, box, number, buildFunction) {
         box.appendChild(deleteButton);
     }
 }
-
-

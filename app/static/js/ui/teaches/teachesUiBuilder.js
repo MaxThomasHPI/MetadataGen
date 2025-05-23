@@ -6,7 +6,6 @@ import {askForTeachesSuggestion} from "../../dataExchange/aiInteraction/teachesA
 import {loadTeachesData} from "../../dataLoader/teaches/teachesDataLoader.js";
 import {askForESCOSuggestion} from "../../dataExchange/escoInteraction/escoInteraction.js";
 
-
 export function buildTeachesUi(number) {
     const container = document.getElementById("teaches-container");
 

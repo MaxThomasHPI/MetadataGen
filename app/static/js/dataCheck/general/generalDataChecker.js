@@ -28,12 +28,9 @@ export function checkGeneralData(errorInputs) {
                         break;
                 }
         }
-
         if(!testResult){
             errorInputs.push(labels[i].parentElement);
         }
-
     }
-
     return errorInputs;
 }

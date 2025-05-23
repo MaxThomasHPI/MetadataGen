@@ -25,13 +25,9 @@ export function checkPublisherData(errorInputs) {
                         break;
                 }
         }
-
         if(!testResult){
             errorInputs.push(labels[i].parentElement);
         }
-
     }
-
     return errorInputs;
-
 }

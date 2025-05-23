@@ -15,15 +15,16 @@ export function storeData(dataTemplates, dataFrameworks) {
     for(const key of Object.keys(dataTemplates)){
         templates[key] = dataTemplates[key];
     }
-
     for(const key of Object.keys(dataFrameworks)){
         frameworks[key] = dataFrameworks[key];
     }
 }
 
+
 export function getTemplates() {
     return templates;
 }
+
 
 export function getFrameworks() {
     return frameworks;

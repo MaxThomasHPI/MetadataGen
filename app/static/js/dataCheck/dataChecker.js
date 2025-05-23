@@ -15,7 +15,6 @@ export function isInputDataValid() {
         return false;
     }
     return true;
-
 }
 
 
@@ -24,6 +23,7 @@ function highlightErrors(errorInputs){
         input.classList.add('invalid');
     }
 }
+
 
 function removeAllErrorHighlighting(){
     for(const input of document.getElementsByClassName('invalid')){

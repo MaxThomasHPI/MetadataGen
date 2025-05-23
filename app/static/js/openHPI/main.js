@@ -4,7 +4,6 @@ import {storeData} from "../storage/storageHandler.js";
 
 function setupUI() {
     const shortCode = document.getElementById('short-code').value;
-    //console.log(shortCode);
     buildUI(shortCode);
 
 }

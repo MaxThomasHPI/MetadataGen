@@ -8,9 +8,7 @@ import {loadKeywordsData} from "./keywords/keywordsDataLoader.js";
 import {loadEducationalLevelData} from "./educationalLevel/educationalLevelDataLoader.js";
 import {buildUI} from "../ui/uiBuilder.js";
 
-
 export async function loadData(inputData) {
-
     while(document.getElementById('main_window').children.length){
         document.getElementById('main_window').children[0].remove();
     }
@@ -22,29 +20,22 @@ export async function loadData(inputData) {
     if(Object.keys(inputData).includes("license")){
         loadLicenseData(inputData);
     }
-
     if(Object.keys(inputData).includes("publisher")){
         loadPublisherData(inputData);
     }
-
     if(Object.keys(inputData).includes("creator")){
         loadAllCreatorData(inputData);
     }
-
     if(Object.keys(inputData).includes("educationalAlignment")){
         loadEducationalAlignmentData(inputData);
     }
-
     if(Object.keys(inputData).includes("teaches")){
         loadTeachesData(inputData);
     }
-
     if(Object.keys(inputData).includes("keywords")){
         loadKeywordsData(inputData);
     }
-
     if(Object.keys(inputData).includes("educationalLevel")){
         loadEducationalLevelData(inputData);
     }
-
 }

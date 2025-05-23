@@ -10,7 +10,6 @@ export function loadPublisherData(inputData) {
         const key = attribute["id"];
         data[key] = inputData["publisher"][key];
     }
-
     for (const key of Object.keys(data)){
         const input = container.querySelector("#" + key);
         let value = data[key];
@@ -18,7 +17,6 @@ export function loadPublisherData(inputData) {
         if(!value){
             value = "";
         }
-
         if(Array.isArray(value)){
             input.value = value[0];
         } else {

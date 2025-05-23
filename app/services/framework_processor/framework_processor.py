@@ -2,7 +2,6 @@ import os
 import pandas as pd
 from app.helper.helper_functions import read_conf, convert_table_into_tree
 from app.services.ESCO_processor.ESCO_processor import get_initial_data
-#from app.services.ESCO_processor.ESCO_processor_dummy import *
 
 
 def find_all_framework_paths(purpose):
@@ -24,7 +23,6 @@ def gather_all_framework_data(purpose):
 
         if framework_name == "ESCO":
             data[framework_name] = get_initial_data()
-            #data[framework_name] = dummy_level_0
         else:
             data[framework_name] = extract_relevant_data(framework, purpose)
 

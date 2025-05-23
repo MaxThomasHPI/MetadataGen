@@ -21,7 +21,6 @@ export function buildKeywordsUi(number) {
     if(number === 0){
         buildSuggestionButton(container);
     }
-
 }
 
 
