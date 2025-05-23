@@ -8,13 +8,16 @@ from app.services.ESCO_suggestion_engine.ESCO_suggestion_engine import find_skil
 from app.services.suggestion_logging.logger import log_suggestion
 
 
-def generate_ed_align_suggestion(title, description, framework):
-    promter = select_single_promter('ed_align')
-    promts = [promter.get_promt(framework)]
+def generate_ed_align_suggestion(title, description, framework, suggestion=None):
+    if not suggestion:
+        promter = select_single_promter('ed_align')
+        promts = [promter.get_promt(framework)]
 
-    query = create_query(title, description, promts)
+        query = create_query(title, description, promts)
 
-    suggestion = extract_data(start_query(query))["educationalAlignment"]
+        suggestion = extract_data(start_query(query))
+
+    suggestion = suggestion["educationalAlignment"]
 
     temp = [{
         "name": suggestion,
@@ -26,13 +29,16 @@ def generate_ed_align_suggestion(title, description, framework):
     return build_all_educational_alignments(temp)
 
 
-def generate_teaches_suggestion(title, description, framework):
-    promter = select_single_promter('teaches')
-    promts = [promter.get_promt(framework)]
+def generate_teaches_suggestion(title, description, framework, suggestion=None):
+    if not suggestion:
+        promter = select_single_promter('teaches')
+        promts = [promter.get_promt(framework)]
 
-    query = create_query(title, description, promts)
+        query = create_query(title, description, promts)
 
-    suggestion = extract_data(start_query(query))["teaches"]
+        suggestion = extract_data(start_query(query))
+
+    suggestion = suggestion["teaches"]
     all_suggestions = list()
 
     for_logging = ""
@@ -50,14 +56,15 @@ def generate_teaches_suggestion(title, description, framework):
     return build_all_teaches(all_suggestions)
 
 
-def generate_keywords_suggestion(title, description):
-    promter = select_single_promter('keywords')
-    promts = [promter.get_promt()]
+def generate_keywords_suggestion(title, description, suggestion=None):
+    if not suggestion:
+        promter = select_single_promter('keywords')
+        promts = [promter.get_promt()]
 
-    query = create_query(title, description, promts)
+        query = create_query(title, description, promts)
 
-    suggestion = start_query(query)
-    suggestion = extract_data(suggestion)
+        suggestion = start_query(query)
+        suggestion = extract_data(suggestion)
 
     for_logging = ",".join(suggestion["keywords"])
     log_suggestion(title, description, "keywords", "", for_logging)
@@ -65,13 +72,14 @@ def generate_keywords_suggestion(title, description):
     return suggestion
 
 
-def generate_educational_level_suggestion(title, description, framework):
-    promter = select_single_promter('educational_level')
-    promts = [promter.get_promt(framework)]
+def generate_educational_level_suggestion(title, description, framework, suggestion=None):
+    if not suggestion:
+        promter = select_single_promter('educational_level')
+        promts = [promter.get_promt(framework)]
 
-    query = create_query(title, description, promts)
+        query = create_query(title, description, promts)
 
-    suggestion = extract_data(start_query(query))
+        suggestion = extract_data(start_query(query))
 
     temp = {
         "name": suggestion["educationalLevel"],
@@ -101,33 +109,43 @@ def generate_specified_suggestions(title: str, description: str, services: dict)
     for key, value in suggestion.items():
         if key == "educationalAlignment":
             framework = services["ed_align"]
-            temp = [{
-                "name": value,
-                "educationalFramework": framework
-            }]
-            metadata_fragments[key] = build_all_educational_alignments(temp)
+            #temp = [{
+            #    "name": value,
+            #    "educationalFramework": framework
+            #}]
+            #metadata_fragments[key] = build_all_educational_alignments(temp)
+            metadata_fragments[key] = generate_ed_align_suggestion(title, description,
+                                                                   framework, suggestion)
         elif key == "keywords":
-            metadata_fragments[key] = value
+            #metadata_fragments[key] = value
+            metadata_fragments[key] = generate_keywords_suggestion(title, description,
+                                                                   suggestion)
         elif key == "teaches":
             framework = services["teaches"]
-            all_suggestions = list()
+            #all_suggestions = list()
 
-            for competency in value.keys():
-                temp = {
-                    "educationalFramework": framework,
-                    "name": competency
-                }
-                all_suggestions.append(temp)
+            #for competency in value.keys():
+            #    temp = {
+            #        "educationalFramework": framework,
+            #        "name": competency
+            #    }
+            #    all_suggestions.append(temp)
 
-            metadata_fragments[key] = build_all_teaches(all_suggestions)
+            #metadata_fragments[key] = build_all_teaches(all_suggestions)
+            metadata_fragments[key] = generate_teaches_suggestion(title, description,
+                                                                  framework, suggestion)
         elif key == "educationalLevel":
             framework = services["educational_level"]
-            temp = {
-                "name": value,
-                "educationalFramework": framework
-            }
+            #temp = {
+            #    "name": value,
+            #    "educationalFramework": framework
+            #}
 
-            metadata_fragments[key] = build_educational_level(temp)
+            #metadata_fragments[key] = build_educational_level(temp)
+            metadata_fragments[key] = generate_educational_level_suggestion(title,
+                                                                            description,
+                                                                            framework,
+                                                                            suggestion)["educationalLevel"]
         else:
             continue
 

@@ -17,6 +17,7 @@ def log_suggestion(course_title, course_description, suggestion_type, framework,
         index = int(logs[-1].split(",")[0]) + 1
 
     timestamp = str(datetime.now())
+    course_description = '"' + course_description.replace("\n", "") + '"'
 
     with open(os.path.join(os.path.dirname(__file__), "log.csv"), 'a') as f:
         f.write(f"{index},{timestamp},{course_title},{course_description},{suggestion_type},{framework},{suggestions}\n")
