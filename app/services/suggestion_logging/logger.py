@@ -20,4 +20,5 @@ def log_suggestion(course_title, course_description, suggestion_type, framework,
     course_description = '"' + course_description.replace("\n", "") + '"'
 
     with open(os.path.join(os.path.dirname(__file__), "log.csv"), 'a') as f:
-        f.write(f"{index},{timestamp},{course_title},{course_description},{suggestion_type},{framework},{suggestions}\n")
+        f.write(f"{index},{timestamp},{course_title},{course_description},{suggestion_type},{framework},"
+                f"{suggestions}\n")

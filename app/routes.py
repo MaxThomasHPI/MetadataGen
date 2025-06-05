@@ -95,7 +95,7 @@ def get_esco_suggestions():
 
 
 @main.route('/openhpi')
-def renderOpenHPI():
+def render_openhpi():
     return render_template("openhpi.html")
 
 

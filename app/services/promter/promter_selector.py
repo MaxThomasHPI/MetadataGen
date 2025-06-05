@@ -1,4 +1,5 @@
-from app.services.promter import keyword_promter, educational_level_promter, educational_alignment_promter, teaches_promter
+from app.services.promter import keyword_promter, educational_level_promter, educational_alignment_promter, \
+    teaches_promter
 
 
 def select_all():

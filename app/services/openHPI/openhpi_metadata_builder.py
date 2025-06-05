@@ -2,8 +2,7 @@ import json
 import io
 import zipfile
 
-from app.services.metadata_builder.metadata_builder import build_all_educational_alignments, \
-    build_all_teaches
+from app.services.metadata_builder.metadata_builder import build_all_educational_alignments, build_all_teaches
 
 
 def build_openhpi_metadata_fragments(input_data):
