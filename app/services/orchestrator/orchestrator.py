@@ -144,7 +144,7 @@ def generate_esco_suggestion(title, description):
             "conceptUrl": skill["uri"],
             "educationalFramework": "ESCO"
         })
-        for_logging.append(skill[title])
+        for_logging.append(skill["title"])
 
     for_logging = ",".join(for_logging)
     log_suggestion(title, description, "teaches", "ESCO", for_logging)
