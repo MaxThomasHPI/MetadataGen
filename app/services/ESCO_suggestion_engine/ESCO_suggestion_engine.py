@@ -1,4 +1,4 @@
-from ..ESCO_suggestion_engine import skills, index, model
+from . import skills, index, model
 
 
 def find_skills(query):
