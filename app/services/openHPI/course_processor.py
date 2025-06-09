@@ -1,4 +1,5 @@
 import requests
+from app.services.translator.translator import translate
 
 
 def load_dataset(url):
@@ -33,5 +34,9 @@ def find_dataset(short_code):
         course = extract_course(data, short_code)
 
         current_page = int(data["links"]["self"].split("=")[1])
+
+    if course and course["attributes"]["inLanguage"][0] == "de":
+        course["attributes"]["name"] = translate(course["attributes"]["name"])
+        course["attributes"]["description"] = translate(course["attributes"]["description"])
 
     return course
