@@ -1,5 +1,5 @@
 # MetadataGen
-This is a generator for metadata according to the MOOChub format
+This is a generator for metadata according to the MOOChub format.
 
 ## Install
 
@@ -34,7 +34,7 @@ https://github.com/MaxThomasHPI/MetadataGen
 git clone https://github.com/MaxThomasHPI/MetadataGen.git
 ```
 
-### Set environment variable
+### Set environment variable - Gemini key
 
 Since the program uses the Gemini-API from Google, a valid key for this application needs to be provided.
 It needs to be stored in an environment variable called "GEMINI_KEY".
@@ -46,7 +46,7 @@ Add the key in the .env variable at the root level.
 GEMINI_KEY=<Your Gemini-API key>
 ```
 
-### Setup docker container
+### Setup and run docker container
 
 The repository contains a Dockerfile for setting up an image.
 Go to the directory containing the Dockerfile and run.
@@ -58,7 +58,9 @@ sudo docker build -t app .
 The application can now be started with the tag "app" as specified after the -t flag.
 
 ```
-sudo docker run -d -p 127.0.0.1:5000:5000 app
+sudo docker run -d -p 127.0.0.1:5000:5000 --env-file .env app
 ```
 
 Set the port with the -p flag according to your needs
+The --env-file option defines the environment variables as set in the .env file.
+Make sure to run docker from the root directory where the .env is located.
