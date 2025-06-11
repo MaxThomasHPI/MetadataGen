@@ -9,6 +9,19 @@ from app.services.suggestion_logging.logger import log_suggestion
 
 
 def generate_ed_align_suggestion(title: str, description: str, framework: str) -> list:
+    """
+    Generates a suggestion for an educational alignment for the course. Only one EducationalAlignment fragment will be
+    generated.
+
+    :param title: The title of the course.
+    :type title: str
+    :param description: The description of the course.
+    :type description: str
+    :param framework: The framework to be used for the suggestion.
+    :type framework: str
+    :return: A list of suggested educational alignments for the course.
+    :rtype: list
+    """
     promter = select_single_promter('ed_align')
     promts = [promter.get_promt(framework)]
 
@@ -28,7 +41,20 @@ def generate_ed_align_suggestion(title: str, description: str, framework: str) -
     return build_all_educational_alignments(temp)
 
 
-def generate_teaches_suggestion(title, description, framework):
+def generate_teaches_suggestion(title: str, description: str, framework: str) -> list:
+    """
+    Generates suggestions for skills/competencies for the course. Four Skill fragments will be generated and returned
+    as a list.
+
+    :param title: The title of the course.
+    :type title: str
+    :param description: The description of the course.
+    :type description: str
+    :param framework: The framework to be used for the suggestion.
+    :type framework: str
+    :return: A list of suggested skills/competencies for the course.
+    :rtype: list
+    """
     promter = select_single_promter('teaches')
     promts = [promter.get_promt(framework)]
 
@@ -54,7 +80,17 @@ def generate_teaches_suggestion(title, description, framework):
     return build_all_teaches(all_suggestions)
 
 
-def generate_keywords_suggestion(title, description):
+def generate_keywords_suggestion(title: str, description: str) -> list:
+    """
+    Generates suggestions for keywords for the course. Ten suggestions will be generated and returned as a list.
+
+    :param title: The title of the course.
+    :type title: str
+    :param description: The description of the course.
+    :type description: str
+    :return: A list of suggested keywords for the course.
+    :rtype: list
+    """
     promter = select_single_promter('keywords')
     promts = [promter.get_promt()]
 
@@ -69,7 +105,15 @@ def generate_keywords_suggestion(title, description):
     return suggestion
 
 
-def generate_educational_level_suggestion(title, description, framework):
+def generate_educational_level_suggestion(title: str, description: str, framework: str) -> dict:
+    """
+    Generates a suggestion for the educational level of the course.
+
+    :param title:
+    :param description:
+    :param framework:
+    :return:
+    """
     promter = select_single_promter('educational_level')
     promts = [promter.get_promt(framework)]
 
@@ -87,7 +131,19 @@ def generate_educational_level_suggestion(title, description, framework):
     return {"educationalLevel": build_educational_level(temp)}
 
 
-def generate_specified_suggestions(title: str, description: str, services: dict):
+def generate_specified_suggestions(title: str, description: str, services: dict) -> dict:
+    """
+    Generates suggestions based on the defined services for the course.
+
+    :param title: The title of the course.
+    :type title: str
+    :param description: The description of the course.
+    :type description: str
+    :param services: The services and the corresponding framework to be used for the service.
+    :type services: dict
+    :return: The generated suggested metadata fragments according to the MOOChub format.
+    :rtype: dict
+    """
     metadata_fragments = dict()
     promts = list()
 
@@ -126,7 +182,17 @@ def generate_specified_suggestions(title: str, description: str, services: dict)
     return metadata_fragments
 
 
-def generate_esco_suggestion(title, description):
+def generate_esco_suggestion(title: str, description: str) -> list:
+    """
+    Generates a teaches suggestion according to the ESCO framework. Four skills/competencies will be generated.
+
+    :param title: The title of the course.
+    :type title: str
+    :param description: The description of the course.
+    :type description: str
+    :return: A list of the suggested ESCO skills/competencies for the course.
+    :rtype: list
+    """
     query = f"{title}. {description}"
 
     skills = find_skills(query)
