@@ -8,14 +8,13 @@ from app.services.ESCO_suggestion_engine.ESCO_suggestion_engine import find_skil
 from app.services.suggestion_logging.logger import log_suggestion
 
 
-def generate_ed_align_suggestion(title, description, framework, suggestion=None):
-    if not suggestion:
-        promter = select_single_promter('ed_align')
-        promts = [promter.get_promt(framework)]
+def generate_ed_align_suggestion(title: str, description: str, framework: str) -> list:
+    promter = select_single_promter('ed_align')
+    promts = [promter.get_promt(framework)]
 
-        query = create_query(title, description, promts)
+    query = create_query(title, description, promts)
 
-        suggestion = extract_data(start_query(query))
+    suggestion = extract_data(start_query(query))
 
     suggestion = suggestion["educationalAlignment"]
 
@@ -29,14 +28,13 @@ def generate_ed_align_suggestion(title, description, framework, suggestion=None)
     return build_all_educational_alignments(temp)
 
 
-def generate_teaches_suggestion(title, description, framework, suggestion=None):
-    if not suggestion:
-        promter = select_single_promter('teaches')
-        promts = [promter.get_promt(framework)]
+def generate_teaches_suggestion(title, description, framework):
+    promter = select_single_promter('teaches')
+    promts = [promter.get_promt(framework)]
 
-        query = create_query(title, description, promts)
+    query = create_query(title, description, promts)
 
-        suggestion = extract_data(start_query(query))
+    suggestion = extract_data(start_query(query))
 
     suggestion = suggestion["teaches"]
     all_suggestions = list()
@@ -56,15 +54,14 @@ def generate_teaches_suggestion(title, description, framework, suggestion=None):
     return build_all_teaches(all_suggestions)
 
 
-def generate_keywords_suggestion(title, description, suggestion=None):
-    if not suggestion:
-        promter = select_single_promter('keywords')
-        promts = [promter.get_promt()]
+def generate_keywords_suggestion(title, description):
+    promter = select_single_promter('keywords')
+    promts = [promter.get_promt()]
 
-        query = create_query(title, description, promts)
+    query = create_query(title, description, promts)
 
-        suggestion = start_query(query)
-        suggestion = extract_data(suggestion)
+    suggestion = start_query(query)
+    suggestion = extract_data(suggestion)
 
     for_logging = ",".join(suggestion["keywords"])
     log_suggestion(title, description, "keywords", "", for_logging)
@@ -72,14 +69,13 @@ def generate_keywords_suggestion(title, description, suggestion=None):
     return suggestion
 
 
-def generate_educational_level_suggestion(title, description, framework, suggestion=None):
-    if not suggestion:
-        promter = select_single_promter('educational_level')
-        promts = [promter.get_promt(framework)]
+def generate_educational_level_suggestion(title, description, framework):
+    promter = select_single_promter('educational_level')
+    promts = [promter.get_promt(framework)]
 
-        query = create_query(title, description, promts)
+    query = create_query(title, description, promts)
 
-        suggestion = extract_data(start_query(query))
+    suggestion = extract_data(start_query(query))
 
     temp = {
         "name": suggestion["educationalLevel"],
