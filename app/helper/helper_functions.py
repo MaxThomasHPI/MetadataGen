@@ -179,22 +179,6 @@ def convert_table_into_tree(data: pd.DataFrame, raw_data: pd.DataFrame) -> dict:
     return tree
 
 
-def find_leafs(tree: dict, leafs: list) -> None:
-    """
-    Alters a given leaf list and adds all leaf nodes from a tree to it.
-
-    :param tree: A framework already converted into a tree.
-    :type tree: dict
-    :param leafs: A list that contains all already found leaf nodes.
-    :type leafs: list
-    """
-    for key, value in tree.items():
-        if not value:
-            leafs.append(key)
-        else:
-            find_leafs(value, leafs)
-
-
 def add_data_to_leafs(tree: dict, parent: str | None, data: pd.DataFrame) -> None:
     """
     Adds short codes to leaf nodes. This ensures that the information is present when the metadata is build.
