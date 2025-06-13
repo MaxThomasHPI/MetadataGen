@@ -1,3 +1,9 @@
+"""
+Initializes the ESCO graph. It reads the provided .TTL file and provides a
+rdflib.Graph object. Initializing in the __init__ make the graph accessible
+in the runtime.
+"""
+
 from rdflib import Graph
 import os
 
