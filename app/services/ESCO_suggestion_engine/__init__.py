@@ -1,3 +1,9 @@
+"""
+Initializes the sentence transformer model and the index. The model and the
+index are made accessible in the module at run time.
+"""
+
+
 from sentence_transformers import SentenceTransformer
 import json
 import faiss
