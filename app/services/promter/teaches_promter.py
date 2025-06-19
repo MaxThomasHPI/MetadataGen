@@ -1,3 +1,6 @@
+"""Creates the promt for generating the teaches attribute suggestion"""
+
+
 from app.helper.helper_functions import get_teaches_framework_terms, get_educational_level_framework
 
 
@@ -15,7 +18,16 @@ PROMT = 'Please check the provided title and description. Select the correspondi
             '\nYou will NOT return a code, just your choices in the given format.\n'
 
 
-def get_promt(framework):
+def get_promt(framework: str) -> str:
+    """
+    Provides the promt the teaches attribute suggestion. It will pass a set of predefined terms to the LLM
+    based on the specified framework.
+
+    :param framework: The framework that is used for the suggestion.
+    :type framework: str
+    :return: A promt for generating the suggestion including the vocabulary that shall be used.
+    :rtype: str
+    """
     return f"{PROMT}\n" \
            f"competencies_framework: {get_teaches_framework_terms(framework)}\n" \
            f"level_framework: {get_educational_level_framework(framework)}\n"
