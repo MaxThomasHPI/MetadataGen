@@ -1,3 +1,6 @@
+"""Initializes the translater. it downloads and installs the model used for translation."""
+
+
 import argostranslate.package
 
 
