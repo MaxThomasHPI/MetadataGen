@@ -1,3 +1,6 @@
+"""The templates for different aspects of the UI."""
+
+
 templates = {
     "templateGeneral": [
         {"id": "name", "type": "tf", "mandatory": True, "test": False},
@@ -22,5 +25,12 @@ templates = {
 }
 
 
-def get_all_templates():
+def get_all_templates() -> dict:
+    """
+    Returns the predefined templates for different attribute fields to be created
+    by the frontend.
+
+    :return: The templates for creating the respective UI.
+    :rtype: dict
+    """
     return templates
