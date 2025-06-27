@@ -48,19 +48,17 @@ GEMINI_KEY=<Your Gemini-API key>
 
 ### Setup and run docker container
 
-The repository contains a Dockerfile for setting up an image.
-Go to the directory containing the Dockerfile and run.
+The repository contains a Dockerfile and a docker-compose.yml for setting up an image.
+Go to the directory containing the Dockerfile/docker-compose.yml and run:
 
 ```
-sudo docker build -t app .
+sudo docker-compose up --build
 ```
 
-The application can now be started with the tag "app" as specified after the -t flag.
+The application should start but can also be started with:
 
 ```
-sudo docker run -d -p 127.0.0.1:5000:5000 --env-file .env app
+sudo docker-compose up
 ```
 
-Set the port with the -p flag according to your needs
-The --env-file option defines the environment variables as set in the .env file.
-Make sure to run docker from the root directory where the .env is located.
+after successfully building the image.

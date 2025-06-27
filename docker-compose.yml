@@ -1,0 +1,9 @@
+version: '3'
+services:
+  metadata_gen:
+    build: .
+    ports:
+      - '80:5000'
+    environment:
+      - GEMINI_KEY
+    container_name: metadata_gen
