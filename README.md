@@ -62,3 +62,12 @@ sudo docker-compose up
 ```
 
 after successfully building the image.
+
+
+### Configuration
+
+The application will run by default on Port 5000 (default Flask).
+Port 80 will be exposed as stated in the Dockerfile.
+In the docker-compose.yml the mapping (80:5000) is configured.
+Also, the nginx.conf contains the mapping.
+If you prefer another configuration make sure to update these files accordingly.
