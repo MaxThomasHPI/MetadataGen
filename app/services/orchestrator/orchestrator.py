@@ -12,6 +12,7 @@ from app.services.metadata_builder.metadata_builder import build_all_educational
 from app.services.response_processor.data_extractor import extract_data
 from app.services.ESCO_suggestion_engine.ESCO_suggestion_engine import find_skills
 from app.services.suggestion_logging.logger import log_suggestion
+from app.services.translator.translator import translate
 
 
 def generate_ed_align_suggestion(title: str, description: str, framework: str, suggestion: dict = None) -> list:
@@ -216,6 +217,9 @@ def generate_esco_suggestion(title: str, description: str) -> list:
     :return: A list of the suggested ESCO skills/competencies for the course.
     :rtype: list
     """
+    title = translate(title)
+    description = translate(description)
+
     query = f"{title}. {description}"
 
     skills = find_skills(query)

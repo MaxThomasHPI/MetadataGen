@@ -1,6 +1,9 @@
 """Assembles all promts into a single query for the LLM."""
 
 
+from app.services.translator.translator import translate
+
+
 PROMT = "You are asked to create metadata for a learning resource.\n"
 
 
@@ -17,6 +20,9 @@ def create_query(title: str, description: str, promts: list = None) -> str:
     :return: A query to be passed to the LLM.
     :rtype: str
     """
+    title = translate(title)
+    description = translate(description)
+
     query = PROMT
 
     for p in promts:
