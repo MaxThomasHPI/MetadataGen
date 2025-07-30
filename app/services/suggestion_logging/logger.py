@@ -7,6 +7,8 @@ and to improve this program.
 
 from datetime import datetime
 import os
+import csv
+from bs4 import BeautifulSoup
 
 
 def log_suggestion(course_title: str, course_description: str, suggestion_type: str, framework: str, suggestions: str) \
@@ -29,22 +31,29 @@ def log_suggestion(course_title: str, course_description: str, suggestion_type: 
     :param suggestions: The suggestions made by the program.
     :type suggestions: str
     """
+    columns = ["timestamp", "course_title", "course_description",
+               "suggestion_type", "framework", "suggestions"]
+
     if "log.csv" not in os.listdir(os.path.dirname(__file__)):
-        header = ",timestamp,course_title,course_description,suggestion_type,framework,suggestions\n"
-        with open(os.path.join(os.path.dirname(__file__), "log.csv"), 'w') as f:
-            f.write(header)
-
-    with open(os.path.join(os.path.dirname(__file__), "log.csv"), 'r') as f:
-        logs = f.readlines()
-
-    if len(logs) == 1:
-        index = 0
-    else:
-        index = int(logs[-1].split(",")[0]) + 1
+        with open(os.path.join(os.path.dirname(__file__), "log.csv"), 'w',
+                  newline="", encoding="utf-16") as f:
+            writer = csv.DictWriter(f, fieldnames=columns, quoting=csv.QUOTE_ALL)
+            writer.writeheader()
 
     timestamp = str(datetime.now())
-    course_description = '"' + course_description.replace("\n", "") + '"'
+    course_description = BeautifulSoup(course_description, "html.parser").get_text(
+        separator=" ", strip=True)
 
-    with open(os.path.join(os.path.dirname(__file__), "log.csv"), 'a') as f:
-        f.write(f"{index},{timestamp},{course_title},{course_description},{suggestion_type},{framework},"
-                f"{suggestions}\n")
+    to_write = {
+        "timestamp": timestamp,
+        "course_title": course_title,
+        "course_description": course_description,
+        "suggestion_type": suggestion_type,
+        "framework": framework,
+        "suggestions": suggestions
+    }
+
+    with open(os.path.join(os.path.dirname(__file__), "log.csv"), 'a', newline="",
+              encoding="utf-16") as f:
+        writer = csv.DictWriter(f, fieldnames=columns, quoting=csv.QUOTE_ALL)
+        writer.writerow(to_write)
