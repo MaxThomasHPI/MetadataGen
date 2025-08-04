@@ -5,7 +5,7 @@ text is identified as a text written in German.
 
 
 import argostranslate.translate
-from langdetect import detect
+from langdetect import detect, LangDetectException
 
 
 from_code = "de"
@@ -22,9 +22,13 @@ def translate(text: str) -> str:
     :return: The output text in English language.
     :rtype: str
     """
-    if detect(text) == from_code:
-        translated = argostranslate.translate.translate(text, from_code, to_code)
-    else:
-        translated = text
+    try:
+        if detect(text) == from_code:
+            translated = argostranslate.translate.translate(text, from_code, to_code)
+        else:
+            translated = text
+    except LangDetectException as e:
+        translated = ""
+        print("Error:", e)
 
     return translated
