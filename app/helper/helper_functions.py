@@ -71,7 +71,13 @@ def get_ed_align_additional_data(framework: str, name: str) -> dict:
     """
     data = get_ed_align_framework(framework)
     data = data[data["Name"] == name]
-    index = max(data.index)
+
+    try:
+        index = max(data.index)
+    except ValueError:
+        print("Value error!")
+        print(f"Name: {name} \t Framework: {framework}")
+        return {}
 
     data = data[data.index == index]
 

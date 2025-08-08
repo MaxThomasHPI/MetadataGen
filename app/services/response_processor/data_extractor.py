@@ -26,6 +26,7 @@ def extract_data(raw_data: str) -> dict:
 
     data = dict()
     for line in lines:
+        line = line.strip('"')
         attribute, line = line.split(' = ')
 
         while "'" in line:

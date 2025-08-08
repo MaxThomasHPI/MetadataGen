@@ -40,7 +40,13 @@ def generate_ed_align_suggestion(title: str, description: str, framework: str, s
 
         suggestion = extract_data(start_query(query))
 
-    suggestion = suggestion["educationalAlignment"]
+    try:
+        suggestion = suggestion["educationalAlignment"]
+    except KeyError:
+        print("Key error!")
+        print(title)
+        print(suggestion)
+        suggestion = ""
 
     temp = [{
         "name": suggestion,
