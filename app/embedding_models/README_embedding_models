@@ -1,0 +1,3 @@
+Store complete embedding models in this folder. Add the folder name of the
+embedding model in the respective framework config, if you want to use the
+model stored here.
