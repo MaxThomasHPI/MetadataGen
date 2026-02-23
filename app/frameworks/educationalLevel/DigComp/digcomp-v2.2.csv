@@ -1,0 +1,9 @@
+level,description,name,uri,broaderconcept,narrowerconcept,shortcode
+1,"user at a basic level, needs guidance",Level 1 (Foundation),https://metadata-generator.xikolo.de/framework/digcomp/1,[],[],1
+1,"user at a basic level, partially autonomous but sometimes needs appropriate guidance",Level 2 (Foundation),https://metadata-generator.xikolo.de/framework/digcomp/2,[],[],2
+1,"autonomous user, can solve straightforward problems",Level 3 (Intermediate),https://metadata-generator.xikolo.de/framework/digcomp/3,[],[],3
+1,"independent user, can solve well-defined problems to his or her own needs",Level 4 (Intermediate),https://metadata-generator.xikolo.de/framework/digcomp/4,[],[],4
+1,user can guide others,Level 5 (Advanced),https://metadata-generator.xikolo.de/framework/digcomp/5,[],[],5
+1,user can solve more complex problems and explain to others,Level 6 (Advanced),https://metadata-generator.xikolo.de/framework/digcomp/6,[],[],6
+1,user at a highly specialized level,Level 7 (Highly specialized),https://metadata-generator.xikolo.de/framework/digcomp/7,[],[],7
+1,user at the most advanced and highly specialized level,Level 8 (Highly specialized),https://metadata-generator.xikolo.de/framework/digcomp/8,[],[],8

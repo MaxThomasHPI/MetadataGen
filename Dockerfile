@@ -7,13 +7,12 @@ COPY ./nginx.conf etc/nginx/nginx.conf
 
 RUN nginx -t
 
-RUN ln -sf /dev/stdout /var/log/nginx/access.log \
-    && ln -sf /dev/stderr /var/log/nginx/error.log
+RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 
 WORKDIR /app
 COPY . /app
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-chache-dir -r requirements
 
 EXPOSE 80
 

@@ -1,0 +1,5 @@
+from app.framework_handler.framework_data_manager import list_all_frameworks_with_top_level_entries
+from pprint import pprint
+
+pprint(list_all_frameworks_with_top_level_entries())
+

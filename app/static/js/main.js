@@ -1,20 +1,10 @@
-import {getFrameworks, getTemplates} from "./dataExchange/templateFrameworkDownloader.js";
-import {storeData} from "./storage/storageHandler.js";
-import {buildUI} from "./ui/uiBuilder.js";
-//import {getExample} from "./dataLoader/example/example.js";
-//import {loadData} from "./dataLoader/dataLoader.js";
-import {catchUpload} from "./dataLoader/uploadCatcher.js";
+import {buildUI} from "./buildForm.js";
+import {get_test_data} from "./tests/testData/testData.js";
+import {loadData} from "./metadataLoader/loadingManager.js";
+import {isInputDataValid} from "./dataCheck/dataChecker.js";
 
-async function setup() {
-    const templateData = await getTemplates();
-    const frameworkData = await getFrameworks();
 
-    storeData(templateData, frameworkData);
-    buildUI();
-
-    //const example = getExample(2);  // for testing
-    //loadData(example);
-    await catchUpload();
-}
-
-setup();
+await buildUI();
+const test_data = get_test_data();
+await loadData(test_data);
+//isInputDataValid();

@@ -1,14 +1,15 @@
-import {checkGeneralData} from "./general/generalDataChecker.js";
-import {checkPublisherData} from "./publisher/publisherDataChecker.js";
-import {checkCreatorData} from "./creator/creatorDataChecker.js";
+import {checkGeneralData} from "./generalChecker.js";
+import {checkPublisherData} from "./publisherChecker.js";
+import {checkAllCreatorContainer} from "./creatorChecker.js";
+
 
 export function isInputDataValid() {
     removeAllErrorHighlighting();
-    let errorInputs = [];
+    const errorInputs = [];
 
-    errorInputs = checkGeneralData(errorInputs);
-    errorInputs = checkPublisherData(errorInputs);
-    errorInputs = checkCreatorData(errorInputs);
+    checkGeneralData(errorInputs);
+    checkPublisherData(errorInputs);
+    checkAllCreatorContainer(errorInputs);
 
     if(errorInputs.length > 0){
         highlightErrors(errorInputs);

@@ -1,0 +1,24 @@
+from langchain_google_genai import ChatGoogleGenerativeAI
+from app.llm_support.template_builder import create_template
+from langchain_core.output_parsers import StrOutputParser
+
+
+def execute_chain(query: str, framework: str) -> str:
+    """
+    Executes a langchain to generate suggestions for keywords and an educational level
+    of a given course. The basis for the suggestion are the course title and description.
+
+    :param query: The title and the description of the course combined into a single string.
+    :type query: str
+    :param framework: The framework for which the educational level suggestion is made.
+    :type framework: str
+    :return: The suggested educational level and keywords for the course.
+    :rtype: str
+    """
+    prompt_template = create_template(framework)
+
+    model = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0)
+
+    chain = prompt_template | model | StrOutputParser()
+
+    return chain.invoke({"query": query})

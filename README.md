@@ -28,7 +28,7 @@ sudo snap install docker
 ### Get data from source
 
 Get the data from the GitHub repository:
-https://github.com/MaxThomasHPI/MetadataGen
+
 
 ```
 git clone https://github.com/MaxThomasHPI/MetadataGen.git
@@ -38,7 +38,7 @@ git clone https://github.com/MaxThomasHPI/MetadataGen.git
 
 Since the program uses the Gemini-API from Google, a valid key for this application needs to be provided.
 It needs to be stored in an environment variable called "GEMINI_KEY".
-The key has to work with the gemini-1.5-flash model.
+The key has to work with the gemini-2.5-flash model.
 Add the key in the .env variable at the root level.
 
 ```
