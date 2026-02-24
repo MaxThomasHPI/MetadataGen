@@ -9,4 +9,4 @@ path_conf = (
 )
 conf = load_suggestion_engine_conf()
 
-create_vector_db("ISCED-F", conf)
+create_vector_db("ESCO", conf)

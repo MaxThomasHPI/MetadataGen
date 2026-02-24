@@ -27,14 +27,18 @@ def generate_suggestion(raw_data: dict) -> dict:
     if "teaches" in raw_data.keys():
         teaches_framework = raw_data["teaches"]
         teaches = search_frameworks(teaches_framework, query)
-        teaches = parse_suggestion(teaches)
-        raw_data["teaches"] = teaches
+
+        if teaches:
+            teaches = parse_suggestion(teaches)
+            raw_data["teaches"] = teaches
 
     if "educationalAlignment" in raw_data.keys():
         ed_align_framework = raw_data["educationalAlignment"]
         ed_align = search_frameworks(ed_align_framework, query)
-        ed_align = parse_suggestion(ed_align)
-        raw_data["educationalAlignment"] = ed_align
+
+        if ed_align:
+            ed_align = parse_suggestion(ed_align)
+            raw_data["educationalAlignment"] = ed_align
 
     if "keywords" or "educationalLevel" in raw_data.keys():
         ed_level_framework = parse_educational_level_input(raw_data)

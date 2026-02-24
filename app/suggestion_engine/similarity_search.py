@@ -5,7 +5,7 @@ from langchain_chroma import Chroma
 import chromadb
 
 
-def search_frameworks(data: list, query: str) -> tuple[list, str]:
+def search_frameworks(data: list, query: str) -> tuple[list, str] | None:
     """
     Conducts a similarity search using cosine similarity within the vector database
     of the given framework. It will return only the metadata of the (by default 5)
@@ -36,7 +36,16 @@ def search_frameworks(data: list, query: str) -> tuple[list, str]:
         conf["MODEL"]
     ).__str__()
 
-    embedding_func = HuggingFaceEmbeddings(model_name=path_embedding_func)
+    if path_embedding_func.exists():
+        embedding_func = HuggingFaceEmbeddings(model_name=path_embedding_func)
+    else:
+        try:
+            embedding_func = HuggingFaceEmbeddings(model_name=conf["MODEL"])
+        except OSError as no_model_found:
+            print(no_model_found)
+            print(f"Model {conf['MODEL']} not found! Please check for e.g. spelling errors in the config!")
+            return
+
     client = chromadb.PersistentClient(path=persist_directory)
 
     vector_store = Chroma(

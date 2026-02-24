@@ -30,7 +30,19 @@ def create_vector_db(framework_name: str, conf: dict) -> None:
         EMBEDDINGS_ROOT /
         conf["MODEL"]
     )
-    embedding_model = HuggingFaceEmbeddings(model_name=path_model.__str__())
+
+    if path_model.exists():
+        print(f"Found local embedding model. Using model at path: {path_model} ...")
+        embedding_model = HuggingFaceEmbeddings(model_name=path_model.__str__())
+    else:
+        print(f"No locally stored model at path {path_model} found. Try loading from HuggingFace ...")
+
+        try:
+            embedding_model = HuggingFaceEmbeddings(model_name=conf["MODEL"])
+        except OSError as no_model_found:
+            print(no_model_found)
+            print(f"Model {conf['MODEL']} not found! Please check for e.g. spelling errors in the config!")
+            return
 
     path_framework = (
         FRAMEWORK_ROOT /

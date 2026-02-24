@@ -1,6 +1,6 @@
 ESCO:
-  MODEL: multilingual-e5-base-learning-outcome-skill-tuned
+  MODEL: isy-thl/multilingual-e5-base-learning-outcome-skill-tuned
   GROUP: teaches
 ISCED-F:
-  MODEL: multilingual-e5-base-iscedf-01
+  MODEL: maxHPI90/multilingual-e5-base-iscedf-01
   GROUP: educationalAlignment
