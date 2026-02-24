@@ -34,10 +34,10 @@ def search_frameworks(data: list, query: str) -> tuple[list, str] | None:
     path_embedding_func = (
         EMBEDDINGS_ROOT /
         conf["MODEL"]
-    ).__str__()
+    )
 
     if path_embedding_func.exists():
-        embedding_func = HuggingFaceEmbeddings(model_name=path_embedding_func)
+        embedding_func = HuggingFaceEmbeddings(model_name=path_embedding_func.__str__())
     else:
         try:
             embedding_func = HuggingFaceEmbeddings(model_name=conf["MODEL"])

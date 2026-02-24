@@ -13,5 +13,5 @@ query = """
     a collaborative project between colleagues from Stanford University, SAP and the Hasso Plattner Institute. </p>\\n
     """
 
-pprint(search_frameworks("ESCO", query))
-pprint(search_frameworks("ISCED-F", query))
+pprint(search_frameworks([{"educationalFramework": "ESCO"}], query))
+pprint(search_frameworks([{"educationalFramework": "ISCED-F"}], query))
