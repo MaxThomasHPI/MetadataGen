@@ -1,4 +1,4 @@
-import {buildInput, buildRow} from "../helper";
+import {buildInput, buildRow} from "../helper.js";
 
 
 export function buildBaseInput(container, template){
