@@ -12,6 +12,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/
 WORKDIR /app
 COPY . /app
 
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements
 
 EXPOSE 80
