@@ -43,11 +43,12 @@ def generate_suggestion(raw_data: dict) -> dict:
     if "keywords" or "educationalLevel" in raw_data.keys():
         ed_level_framework = parse_educational_level_input(raw_data)
         llm_suggestion = execute_chain(query, ed_level_framework)
-        llm_suggestion = parse_chain_output(llm_suggestion, ed_level_framework)
+        if llm_suggestion:
+            llm_suggestion = parse_chain_output(llm_suggestion, ed_level_framework)
 
-        if "keywords" in raw_data.keys():
-            raw_data["keywords"] = llm_suggestion["keywords"]
-        if "educationalLevel" in raw_data.keys():
-            raw_data["educationalLevel"] = llm_suggestion["educationalLevel"]
+            if "keywords" in raw_data.keys():
+                raw_data["keywords"] = llm_suggestion["keywords"]
+            if "educationalLevel" in raw_data.keys():
+                raw_data["educationalLevel"] = llm_suggestion["educationalLevel"]
 
     return build_metadata(raw_data)

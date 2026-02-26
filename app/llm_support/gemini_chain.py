@@ -1,9 +1,10 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from app.llm_support.template_builder import create_template
 from langchain_core.output_parsers import StrOutputParser
+from langchain_google_genai.chat_models import ChatGoogleGenerativeAIError
 
 
-def execute_chain(query: str, framework: str) -> str:
+def execute_chain(query: str, framework: str) -> str | None:
     """
     Executes a langchain to generate suggestions for keywords and an educational level
     of a given course. The basis for the suggestion are the course title and description.
@@ -17,8 +18,13 @@ def execute_chain(query: str, framework: str) -> str:
     """
     prompt_template = create_template(framework)
 
-    model = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0)
+    try:
+        model = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0)
 
-    chain = prompt_template | model | StrOutputParser()
+        chain = prompt_template | model | StrOutputParser()
 
-    return chain.invoke({"query": query})
+        return chain.invoke({"query": query})
+    except ChatGoogleGenerativeAIError as e:
+        print(e)
+        print("Invalid API key! Skipping keywords and educational level suggestion...")
+        return None
