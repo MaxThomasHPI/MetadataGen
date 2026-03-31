@@ -12,7 +12,7 @@ Make sure the system is up-to-date.
 sudo apt update && sudo apt upgrade
 ```
 
-The source code can be cloned using git.
+The source code can be cloned using Git.
 
 ```
 sudo apt install git
