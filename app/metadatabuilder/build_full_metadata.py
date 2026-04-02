@@ -2,6 +2,7 @@ from app.metadatabuilder.build_organization import build_organization_fragment
 from app.metadatabuilder.build_person import build_all_persons_fragments
 from app.metadatabuilder.build_resource_type import build_resource_type_fragment
 from app.metadatabuilder.build_optional_metadata import build_optional_metadata
+from app.suggestion_logging.log_writer import write_log
 
 
 def build_metadata(data: dict) -> dict:
@@ -30,5 +31,7 @@ def build_metadata(data: dict) -> dict:
 
     optional_attributes = build_optional_metadata(data)
     metadata.update(optional_attributes)
+
+    write_log(metadata)
 
     return metadata

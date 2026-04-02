@@ -9,5 +9,6 @@ langchain-google-genai==4.2.0
 langchain-huggingface==1.2.0
 langdetect==1.0.9
 pandas==2.3.3
+psycopg==3.3.3
 pyyaml==6.0.3
 sentence-transformers==5.2.0
