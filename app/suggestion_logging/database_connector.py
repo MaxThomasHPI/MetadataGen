@@ -7,6 +7,6 @@ def connect_to_database():
         dbname=os.environ["POSTGRES_DB"],
         user=os.environ["POSTGRES_USER"],
         password=os.environ["POSTGRES_PASSWORD"],
-        host="127.0.0.1",
+        host="logging_suggestion_db",
         port="5432"
     )

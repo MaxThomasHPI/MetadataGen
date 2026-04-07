@@ -7,7 +7,7 @@ def write_log(generated_metadata):
     check_table()
 
     conn = connect_to_database()
-    courser = conn.courser()
+    cursor = conn.cursor()
 
     attributes = [
         "name",
@@ -25,8 +25,12 @@ def write_log(generated_metadata):
         data.append(json.dumps(datum))
 
     statement = f"""
-        INSERT INTO suggestion_log VALUES (%s, %s, %s, %s, %s, %s)
+        INSERT INTO suggestion_log (name, description, educationalAlignment, 
+        teaches, keywords, educationalLevel) VALUES (%s, %s, %s, %s, %s, %s);
     """
 
-    courser.executemany(statement, tuple(data))
+    cursor.execute(statement, data)
+    conn.commit()
+
+    cursor.close()
     conn.close()
