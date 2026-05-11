@@ -29,8 +29,7 @@ def generate_metadata() -> Response:
 @main.route('/suggestion', methods=['POST'])
 def generate_metadata_with_suggestions() -> Response:
     data = request.get_json()
-    with open('test_input_suggestion.json', 'w') as f:
-        f.write(json.dumps(data, indent=4))
+
     return jsonify(generate_suggestion(data))
 
 
