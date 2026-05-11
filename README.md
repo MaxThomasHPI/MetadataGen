@@ -91,3 +91,211 @@ In the docker-compose.yml the mapping (80:5000) is configured.
 Also, the nginx.conf contains the mapping.
 If you prefer another configuration make sure to update these files accordingly.
 With this setup the application frontend can be reached via accessing http://localhost in the browser.
+
+
+### Supported frameworks
+
+The selection of frameworks for recommendations is currently limited.
+Frameworks were selected after careful investigations and evaluations.
+This effects the following attributes (the supported frameworks are given in brackets):
+- educationalAlignment (ISCED-F)
+- teaches (ESCO)
+- educationalLevel (DigComp)
+
+
+### Input data for receiving suggestions
+
+MetadataGen provides an API for generating suggestions for the attributes "educationalAlignment", "teaches", "keywords", "educationalLevel".
+It expects an HTTP POST request with a JSON file in the body.
+The JSON file must follow the following schema:
+
+```
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/moochub/metadatagen/
+    input-metadatagen",
+    "title": "JSON schema for using the MetadataGen API",
+    "description": "This schema specifies the JSON format 
+    that an JSON file in the HTTP POST request body must 
+    contain to use MetadataGen.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The title/name of the course",
+            "example": "Sustainability in the Digital Age: 
+            Efficient AI Techniques in the LLM Era"
+        },
+        "description": {
+            "type": "string",
+            "description": "Description of the course as an 
+            HTML document",
+            "example": "<h2>Welcome to the 'Sustainability 
+            in the Digital Age' series</h2> <p>In an 
+            era where digital technologies ..."
+        },
+        "publisher": {
+            "type": "object",
+            "description": "The publisher of the course.",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The name of the 
+                    publisher.",
+                    "example": "openHPI"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        },
+        "creator": {
+            "type": "array",
+            "description": "The creators of the course.",
+            "items": {
+                "type": "object",
+                "description": "A creator of the course.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the 
+                        creator.",
+                        "example": "Haojin Yang"
+                    }
+                },
+                "required": [
+                    "name"
+                ]
+            }
+        },
+        "url": {
+            "type": "string",
+            "description": "An URI pointing at the course 
+            landingpage.",
+            "fromat": "IRI",
+            "example": "https://open.hpi.de/courses/
+            aimethods2025"
+        },
+        "license": {
+            "type": "array",
+            "description": "All license informations about 
+            the course.",
+            "items": {
+                "type": "object",
+                "description": "The license information about 
+                the course.",
+                "properties": {
+                    "identifier": {
+                        "type": "string",
+                        "description": "A license shortcode 
+                        according to https://spdx.org/licenses/ 
+                        or \"proprietary\".",
+                        "example": "CC-BY-NC-SA-4.0"
+                    },
+                    "url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "iri",
+                        "description": "A license according to 
+                        https://spdx.org/licenses/ or \"null\" 
+                        if proprietary.",
+                        "example": "https://spdx.org/licenses/
+                        CC-BY-SA-4.0.html"
+                    }
+                },
+                "requirements": [
+                    "identifier",
+                    "url"
+                ]
+            }
+        },
+        "educationalAlignment": {
+            "type": "array",
+            "description": "The framework to be used for
+            the suggestion.",
+            "items": {
+                "type": "object",
+                "description": "The framework name to 
+                be used for the suggestion.",
+                "properties": {
+                    "educationalFramework": {
+                        "type": "string",
+                        "description": "The name of the 
+                        framework to be used for the 
+                        suggestion",
+                        "enum": [
+                           "ISCED-F"
+                       ]
+                    }
+                },
+                "required": [
+                    "educationalFramework"
+                ]
+            }
+        },
+        "teaches": {
+            "type": "array",
+            "description": "The framework to be used for
+            the suggestion.",
+            "items": {
+                "type": "object",
+                "description": "The framework name to 
+                be used for the suggestion.",
+                "properties": {
+                    "educationalFramework": {
+                        "type": "string",
+                        "description": "The name of the 
+                        framework to be used for the 
+                        suggestion",
+                        "enum": [
+                            "ESCO"
+                        ]
+                    }
+                },
+                "required": [
+                    "educationalFramework"
+                ]
+            }
+        },
+        "keywords": {
+            "type": "null"
+        },
+        "educationalLevel": {
+            "type": "array",
+            "description": "The framework to be used for
+            the suggestion.",
+            "items": {
+                "type": "object",
+                "description": "The framework name to 
+                be used for the suggestion.",
+                "properties": {
+                    "educationalFramework": {
+                        "type": "string",
+                        "description": "The name of the 
+                        framework to be used for the 
+                        suggestion",
+                        "enum": [
+                            "DigComp"
+                        ]
+                    }
+                },
+                "required": [
+                    "educationalFramework"
+                ]
+            }
+        }
+    },
+    "required": [
+        "name",
+        "description",
+        "publisher",
+        "creator",
+        "url",
+        "license"
+    ]
+}
+```
+
+
