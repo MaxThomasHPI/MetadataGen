@@ -179,7 +179,7 @@ The JSON file must follow the following schema:
         "license": {
             "type": "array",
             "description": "All license informations about 
-            the course.",
+            the course.", 
             "items": {
                 "type": "object",
                 "description": "The license information about 
