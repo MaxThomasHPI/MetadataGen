@@ -35,6 +35,6 @@ def parse_chain_output(chain_output: str, framework: str) -> dict:
         ed_level["conceptUrl"] = uri
         ed_level["educationalFramework"] = framework
 
-        parsed_output["educationalLevel"] = ed_level
+        parsed_output["educationalLevel"] = [ed_level]
 
     return parsed_output
