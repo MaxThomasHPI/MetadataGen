@@ -77,6 +77,6 @@ llm_suggestion = {
 }
 
 
-with open("test.json", 'w') as f:
+with open("test_output_full.json", 'w') as f:
     f.write(json.dumps(generate_suggestion(raw_data), indent=4))
 

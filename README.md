@@ -177,34 +177,39 @@ The JSON file must follow the following schema:
             aimethods2025"
         },
         "license": {
-            "type": "object",
-            "description": "The license information about 
-            the course.",
-            "properties": {
-                "identifier": {
-                    "type": "string",
-                    "description": "A license shortcode 
-                    according to https://spdx.org/licenses/ 
-                    or \"proprietary\".",
-                    "example": "CC-BY-NC-SA-4.0"
+            "type": "array",
+            "description": "All license informations about 
+            the course.", 
+            "items": {
+                "type": "object",
+                "description": "The license information about 
+                the course.",
+                "properties": {
+                    "identifier": {
+                        "type": "string",
+                        "description": "A license shortcode 
+                        according to https://spdx.org/licenses/ 
+                        or \"proprietary\".",
+                        "example": "CC-BY-NC-SA-4.0"
+                    },
+                    "url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "iri",
+                        "description": "A license according to 
+                        https://spdx.org/licenses/ or \"null\" 
+                        if proprietary.",
+                        "example": "https://spdx.org/licenses/
+                        CC-BY-SA-4.0.html"
+                    }
                 },
-                "url": {
-                    "type": [
-                        "string",
-                        "null"
-                    ],
-                    "format": "iri",
-                    "description": "A license according to 
-                    https://spdx.org/licenses/ or \"null\" 
-                    if proprietary.",
-                    "example": "https://spdx.org/licenses/
-                    CC-BY-SA-4.0.html"
-                }
-            },
-            "requirements": [
-                "identifier",
-                "url"
-            ]
+                "requirements": [
+                    "identifier",
+                    "url"
+                ]
+            }
         },
         "educationalAlignment": {
             "type": "array",
@@ -221,8 +226,8 @@ The JSON file must follow the following schema:
                         framework to be used for the 
                         suggestion",
                         "enum": [
-                            "ISCED-F"
-                        ]
+                           "ISCED-F"
+                       ]
                     }
                 },
                 "required": [
@@ -281,7 +286,15 @@ The JSON file must follow the following schema:
                 ]
             }
         }
-    }
+    },
+    "required": [
+        "name",
+        "description",
+        "publisher",
+        "creator",
+        "url",
+        "license"
+    ]
 }
 ```
 
