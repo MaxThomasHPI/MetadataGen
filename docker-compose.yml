@@ -10,11 +10,10 @@ services:
       metadata_gen
   logging_suggestion_db:
     image: postgres:17.9
-    ports:
-      - '5432:5432'
     env_file:
       - '.env'
     volumes:
-      - ./db-data/:/var/lib/postgresql/data/
-    container_name:
-      suggestion_logging
+      - db-data:/var/lib/postgresql/data
+    container_name: suggestion_logging
+volumes:
+  db-data:
