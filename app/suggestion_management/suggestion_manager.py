@@ -56,6 +56,17 @@ def generate_full_suggestion(raw_data: dict) -> dict:
 
 
 def generate_optional_suggestions(raw_data):
+    """
+    Generates only the optional attributes keywords, educationalAlignment, teaches
+    and educationalLevel. The basis are the title and the description of a course.
+    Suggestions are generated according to this information. The data is returned in
+    the MOOChub format.
+
+    :param raw_data: The title and the description of a course.
+    :type raw_data: dict
+    :return: Metadata for the four optional attributes in the MOOChub format.
+    :rtype: dict
+    """
     output_data = dict()
 
     query = f"{raw_data['name']}. {raw_data['description']}"
